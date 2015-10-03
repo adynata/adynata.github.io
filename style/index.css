@@ -49,9 +49,8 @@ body {
 .wrapper-content {
   position: absolute;
   width: 100%;
-
   background-color: purple;
-  z-index: 9999;
+  z-index: 0;
   height: 100%;
   float: right;
   overflow-x: hidden;
@@ -76,9 +75,18 @@ body {
 .hide {
   transform: matrix(1,0,0,1,1000,0);
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
   transition-property: transform;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-in-out;
+  z-index: 500;
+}
+
+.show {
+  transform: matrix(1,0,0,1,0,0);
+  transition-delay: 0s;
+  transition-duration: 0.8s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
   z-index: 500;
 }
 
@@ -89,16 +97,45 @@ body {
 header {
   position: relative;
   width: 100%;
-  height: 4%;
+  height: 110px;
   background-color: orange;
 }
 
-.header-nav-links {
+.logo {
+  float: right;
+  width: 100px;
+  height: 100px;
+}
+
+
+.lion-content .about-content .bionn-content {
+  position: relative;
   display: none;
 }
 
-.lion-content .moon-content .about-content .bionn-content {
+.about-content {
   position: relative;
+  background-color: red;
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.lion-content {
+    position: relative;
+    background-color: teal;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.moon-content {
+  position: relative;
+  background-color: black;
+  display: block;
+  height: 100%;
+  width: 100%;
   display: none;
 }
 
@@ -110,7 +147,7 @@ header {
 
 footer {
   width: 100%;
-  height: 3%;
+  height: 110px;
   background-color: cadetblue;
 }
 
@@ -144,15 +181,17 @@ footer {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
+  z-index: 9999;
+  border-radius: 20px;
 }
 
-.modal.open {
+.contact-modal.open {
   display: block;
   opacity: 1;
   -webkit-transform: rotateX(0deg) scale(1);
   transform: rotateX(0deg) scale(1);
 }
-.modal .close {
+.contact-modal .close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -165,7 +204,7 @@ footer {
   transition: color 125ms ease;
 }
 
-.modal .close:hover { color: #666; }
+.contact-modal .close:hover { color: #666; }
 
 .header-content {
   position: relative;
@@ -174,118 +213,54 @@ footer {
 }
 
 .header-nav-links {
-  position: relative; 
+  position: relative;
+  float: left;
   height: 100%;
-  width: 50px;
+  width: 500px;
   background-color: blue;
 }
 
 .header-nav-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   width: 100%;
   height: 100%;
   color: red;
-  display: block;
   text-decoration: none;
 }
 
-
-
-/*input {
-  margin-bottom: 20px;
-  radius: 10px;
-}
-
-
-.my-name-is {
-  width: 100%;
-  font-size: 24px;
-  color: whitesmoke;
-  font-family: "Avenir";
-  font-weight: 100;
-  padding: 0;
-}
-
-.main {
-  position: relative;
-}
-
-button {
-  padding:5px;
-  background-color: pink;
-  border: 1px solid #3F4C57;
-  color:#000;
-  text-decoration:none;
-  font-family: "Avenir";
-}
-
-button:hover {
-  background-color: #9f505b;
-}
-
-
-
-.footer-right a {
-  padding: 5px;
-}
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    color: pink;
-}
-
-a:active {
-    text-decoration: underline;
-    color: magenta;
-}
-
-input.button:hover {
-  color: magenta;
-}
-
-.headerimg {
+.header-nav-links ul li {
+  display: inline;
   float: right;
-  position: sticky;
-  margin: 10px 20px 0px 10px;
-  padding: 0;
 }
 
-.headerimg img {
-  fill: pink;
+.nav-buttons:hover {
+  background-color: grey;
 }
 
-form input textarea {
-  position: relative;
-  width: 400px;
-  display: block;
+.logo svg {
+  fill: blue;
 }
 
-svg {
+.social-links svg {
   width: 50px;
   height: 50px;
 }
 
-svg:hover {
+.social-links svg:hover {
   cursor: pointer;
 }
 
-svg:hover circle {
+.social-links svg:hover circle {
   fill: cadetblue;
 }
 
-svg:hover .i {
+.social-links svg:hover .i {
   fill: white;
 }
 
 .social-links ul {
-  float: left;
   list-style-type: none;
   margin: 10px;
   padding: 0;
@@ -295,126 +270,3 @@ svg:hover .i {
 .social-links li {
   display: inline-block;
 }
-
-.social-links img {
-  fill: #B33E2E;
-}
-
-div.social-links img:hover {
-  fill: #FFFFFF;
-}
-
-.left-column, .center-column, .right-column {
-  float: left;
-	margin-bottom: 1em;
-	margin-left: 0%;
-}
-
-.left-column {
-  width: 25%;
-
-}
-
-.left-column img {
-  display: block;
-  margin: 25px
-}
-
-.center-column {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.right-column {
-  width: 25%;
-}
-
-article {
-  /*position: absolute;*/
-  padding: 0px 0px 0px 0px;
-  text-align: left-column;
-  font-family: "Avenir", sans-serif;
-  font-weight: lighter;
-  font-size: 24px;
-  color: whitesmoke;
-}
-
-.favorite-things {
-  /*position: absolute;*/
-  padding: 0px 0px 0px 0px;
-  text-align: left-column;
-  font-family: "Avenir", sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-  color: whitesmoke;
-}
-
-article .overflow {
-  /*position: absolute;*/
-  padding: 0px 0px 0px 0px;
-  font-family: "Avenir", sans-serif;
-  font-weight: 100;
-  font-size: 24px;
-  color: whitesmoke;
-}
-
-.input-prompt {
-  position: absolute;
-  font-style: italic;
-  color: #aaa;
-  margin: 0.2em 0 0 0.5em;
-}
-
-.overflow {
-  width: 400px;
-  margin-left: 100%;
-  margin-right: 100%;
-  height: 80px;
-  overflow-y: auto;
-}
-
-.form {
-  text-align: center;
-  position: relative;
-
-}
-
-.index-footer {
-  height: 100px;
-}
-
-.modalDialog {
-	position: fixed;
-	font-family: Arial, Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-
-
-
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 5px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #666);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}*/

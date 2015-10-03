@@ -17,23 +17,26 @@
     </div>
     <div class="project-elements">
       this is the project div
+        <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/adynata.ciez978js12u2srm0p6xdr78o/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWR5bmF0YSIsImEiOiJjaWV6OTc5cTcxMmxucnptM2liNmxzMXphIn0.BdFZvNJlxMjOKhgK4mWUJA'></iframe>
     </div>
   </div>
 
 
-  <div class="wrapper">
-    <div class="wrapper-content">
+
+  <div class="wrapper show">
+    <div class="wrapper-content group">
       <div class="hot-spot">
       </div>
 
       <div class="contact-modal">
         <p>It's a contact form!</p>
+        <a href="#" class="close">&times;</a>
       </div>
       <header>
         <div class="header-content group">
           <div class="logo">
           </div>
-          <div class="header-nav-links">
+          <div class="header-nav-links group">
             <ul>
               <li class="nav-buttons about">ABOUT</li>
               <li class="nav-buttons projects">PROJECTS</li>
@@ -44,10 +47,47 @@
       </header>
       <div class="main-content group">
         <div class="lion-content">
+          <div class="left-column">
+          </div>
+          <div class="center-column">
+            <div class="lion-header">
+              <pre><h1>L  I  O  N     F  A  C  T  S !</h1></pre>
+            </div>
+            <div class="lion-border">
+              <div class="top-lion">
+                <ul class="lion-buttons group">
+                  <li class="get-new" onclick="placeLion()">RANDOM FACT</a></li>
+                  <li class="fact-order"></li>
+                  <li class="about-lf" onclick="placeAbout()">ABOUT<li>
+                </ul>
+                <img src="images/lion-top.gif"height="150px">
+              </div>
+              <div class="liontext">
+                  <span class="lionarticle"></span>
+              </div>
+
+              <div class="bottom-lion">
+                <img src="images/lion-bottom.gif" height="150px">
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+          </div>
         </div>
         <div class="moon-content">
+          <div class="carousel-view">
+          </div>
+
         </div>
         <div class="about-content">
+          <div class="photo-resume">
+            <div class="portrait">
+            </div>
+            <div class="resume">
+            </div>
+          </div>
+          <div class="about-and-projects">
+          </div>
         </div>
         <div class="bionn-content">
         </div>
@@ -63,8 +103,8 @@
   </div>
   <script src="javascripts/display.js"></script>
   <script src="javascript.js"></script>
-  <script src="lion.js">
-  </script>
+  <script src="modal.js"></script>
+  <script src="lion.js"></script>
 </body>
 <!-- TODO: find an SVG file for Medium -->
 </html>
