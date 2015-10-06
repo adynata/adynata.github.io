@@ -5,8 +5,10 @@
   <title>Claire Woods</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/index.css">
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="style/jquery.bxslider.css">
+  <link rel="stylesheet" href="style/moon.css">
+
+
 </head>
 
 
@@ -76,6 +78,41 @@
         </div>
         <div class="moon-content">
           <div class="carousel-view">
+            <ul class="bxslider">
+              <li class="slide item">
+              <img src="/images/moon/moon_01t.jpg" alt="Picture 1" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_02t.jpg" alt="Picture 2" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_04t.jpg" alt="Picture 4" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_05t.jpg" alt="Picture 5" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_06t.jpg" alt="Picture 6" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_07t.jpg" alt="Picture 7" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_08t.jpg" alt="Picture 8" />
+              </li>
+              <li class="slide item">
+                <img src="/images/moon/moon_09t.jpg" alt="Picture 9" />
+              </li>
+            </ul>
+            <div id="bx-pager">
+              <div id="pager-wrapper">
+                <a data-slide-index="0" class="thumbs" href=""><img src="/images/moon/moon_01t.jpg" /></a>
+                <a data-slide-index="1" class="thumbs" href=""><img src="/images/moon/moon_02t.jpg" /></a>
+                <a data-slide-index="2" class="thumbs" href=""><img src="/images/moon/moon_04t.jpg" /></a>              <a data-slide-index="3" class="thumbs" href=""><img src="/images/moon/moon_05t.jpg" /></a>              <a data-slide-index="4" class="thumbs" href=""><img src="/images/moon/moon_06t.jpg" /></a>              <a data-slide-index="5" class="thumbs" href=""><img src="/images/moon/moon_07t.jpg" /></a>
+                <a data-slide-index="6" class="thumbs" href=""><img src="/images/moon/moon_08t.jpg" /></a>
+                <a data-slide-index="7" class="thumbs" href=""><img src="/images/moon/moon_09t.jpg" /></a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -101,10 +138,14 @@
       </footer>
     </div>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="javascripts/jquery.bxslider.min.js"></script>
   <script src="javascripts/display.js"></script>
-  <script src="javascript.js"></script>
-  <script src="modal.js"></script>
-  <script src="lion.js"></script>
+  <script src="javascripts/lion.js"></script>
+  <script src="javascripts/moon.js"></script>
+
+
+
 </body>
 <!-- TODO: find an SVG file for Medium -->
 </html>

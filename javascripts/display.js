@@ -3,7 +3,7 @@ $(function() {
 
   $( ".logo" ).load( "partials/logo.svg");
   $( ".social-links" ).load( "partials/social_links.html")
-
+  // $( ".moon-content").load( "partials/moon.html")
 
   $('.menu-text').click( function() {
     toggleHidden();
@@ -14,6 +14,10 @@ $(function() {
     if ($('.hot-spot').hasClass('hideable')) {
       toggleHidden();
     }
+  });
+
+  $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager'
   });
 
   function toggleHidden() {

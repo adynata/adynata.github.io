@@ -1,0 +1,22 @@
+{
+  "name": "cssprototyping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adynata/layoutprotoytyping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adynata/layoutprotoytyping/issues"
+  },
+  "homepage": "https://github.com/adynata/layoutprotoytyping#readme",
+  "dependencies": {
+    "lightgallery": "^1.2.5"
+  }
+}
