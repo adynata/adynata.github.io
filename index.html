@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
   <title>Claire Woods</title>
+  <link href='https://fonts.googleapis.com/css?family=Martel+Sans:400,200,300,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/jquery.bxslider.css">
   <link rel="stylesheet" href="style/moon.css">
+  <link rel="stylesheet" href="style/modal.css">
+
 
 
 </head>
@@ -15,7 +18,7 @@
 <body>
   <div class="menu-components-wrapper">
     <div class="menu-sidebar">
-      <div class="menu-text">OTHER PROJECTS</div>
+      <div class="menu-text">PROJECTS</div>
     </div>
     <div class="project-elements">
       this is the project div
@@ -31,19 +34,41 @@
       </div>
 
       <div class="contact-modal">
-        <p>It's a contact form!</p>
+        <h1 class="my-name-is"> Say hello!</h1>
+        <form action="http://formspree.io/clairewoods@gmail.com"
+              method="POST">
+              <p>
+              <input type="text" placeholder=" What's your name?" />
+              </p>
+              <p>
+              <input type="email" name="_replyto" placeholder=" What's your email? " />
+              </p>
+              <textarea name="message" rows="8" cols="40" placeholder=" Descriptive language goes here.   "></textarea>
+              <p>
+              <a href="#openModal">
+                <button type="submit" value="Send">Send</button>
+              </a>
+              </p>
+        </form>
         <a href="#" class="close">&times;</a>
       </div>
       <header>
         <div class="header-content group">
           <div class="logo">
+            <h1><span>C</span>LAIRE <span>W</span>OODS</h1>
+            <h3 class="subtitle-sm">WEB DEVELOPER / ARTIST</h2>
+
+            <!-- <h2>WEB DEVELOPER / ARTIST</h2> -->
           </div>
           <div class="header-nav-links group">
+            <h2 class="subtitle">WEB DEVELOPER / ARTIST</h2>
+
             <ul>
+              <li class="nav-buttons projects" display="none">PROJECTS</li>
               <li class="nav-buttons about">ABOUT</li>
-              <li class="nav-buttons projects">PROJECTS</li>
-              <li class="nav-buttons contact">CONTACT ME</li>
+              <li class="nav-buttons contact">CONTACT</li>
             </ul>
+
           </div>
         </div>
       </header>
@@ -76,7 +101,7 @@
           <div class="right-column">
           </div>
         </div>
-        <div class="moon-content">
+        <div class="moon-content group">
           <div class="carousel-view">
             <ul class="bxslider">
               <li class="slide item">
@@ -105,15 +130,15 @@
               </li>
             </ul>
             <div id="bx-pager">
-              <div id="pager-wrapper">
                 <a data-slide-index="0" class="thumbs" href=""><img src="/images/moon/moon_01t.jpg" /></a>
                 <a data-slide-index="1" class="thumbs" href=""><img src="/images/moon/moon_02t.jpg" /></a>
                 <a data-slide-index="2" class="thumbs" href=""><img src="/images/moon/moon_04t.jpg" /></a>              <a data-slide-index="3" class="thumbs" href=""><img src="/images/moon/moon_05t.jpg" /></a>              <a data-slide-index="4" class="thumbs" href=""><img src="/images/moon/moon_06t.jpg" /></a>              <a data-slide-index="5" class="thumbs" href=""><img src="/images/moon/moon_07t.jpg" /></a>
                 <a data-slide-index="6" class="thumbs" href=""><img src="/images/moon/moon_08t.jpg" /></a>
                 <a data-slide-index="7" class="thumbs" href=""><img src="/images/moon/moon_09t.jpg" /></a>
-              </div>
             </div>
+
           </div>
+          <div class="moon-about">"Quaerat quia quam placeat. Iste nobis odit explicabo deserunt non sit dolore. Autem ex voluptas omnis quia. Iste consequatur qui et adipisci aspernatur. Temporibus maxime amet natus culpa voluptas facere.", "Ipsum id natus et maxime est officiis. Voluptate et esse doloribus qui accusamus. Ad adipisci sint qui hic illo fugiat. Natus itaque molestiae est labore placeat est.", "Cumque perferendis sit nihil. Ipsum qui voluptatem animi vel. Minima quam dolor a at suscipit.", "Tempora molestiae quos consequatur. Ea saepe error molestiae quia in. Ab possimus numquam sit pariatur reprehenderit at ullam.", "Ea aliquam qui praesentium error. Architecto fugit aut. Consequatur nihil minus ducimus. Ipsam quo impedit doloremque vitae et ducimus facere."</div>
 
         </div>
         <div class="about-content">

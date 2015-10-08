@@ -10,12 +10,7 @@
  * http://bxcreative.com
  */
 
-.carousel-view {
-	height: 70%;
-	width: 70%;
-  margin-left: auto;
-	margin-right: auto;
-}
+
 /** RESET AND LAYOUT
 ===================================*/
 
@@ -54,7 +49,7 @@
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
-	position: absolute;
+	position: relative;
 	bottom: -30px;
 	width: 100%;
 }
@@ -121,15 +116,15 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 5px;
+	left: 15px;
 	background: url(/images/controls.png) no-repeat 0 -32px;
-	opacity: 40%;
+	opacity: 20%;
 }
 
 .bx-wrapper .bx-next {
-	right: 5px;
+	right: 15px;
 	background: url(/images/controls.png) no-repeat -43px -32px;
-	opacity: 40%;
+	opacity: 20%;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -148,7 +143,7 @@
 	width: 32px;
 	height: 32px;
 	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 999;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -193,22 +188,21 @@
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
-.pager-wrapper {
+#bx-pager {
 	width:100%;
 	text-align: center;
 }
 
-.pager-wrapper a {
+#bx-pager a {
 	display:inline-block;
+	width: 10%;
 	/*width:10px;
 	height:10px; background-image: url(img/pager-off.gif);
 	text-indent: -9999px;
-	background-color: red; background-repeat: no-repeat; margin:0 2px;*/
 }
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	/*text-align: left;*/
-	width: 80%;
 }
 
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
@@ -217,17 +211,20 @@
 }
 
 .thumbs img {
-	height: 11.5%;
-	width: 11.5%;
 	display: inline;
+	height: 100%;
+	width: 100%;
+	border: 2px black solid;
 }
 
 .thumbs img:hover, .thumbs img:active {
-	/*border: 5px pink solid;*/
-	height: 13%;
-	width: 13%;
+	border: 2px white solid;
 }
 
+
+#bx-pager {
+	text-align:center;
+}
 
 /* IMAGE CAPTIONS */
 

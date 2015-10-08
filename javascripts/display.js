@@ -1,7 +1,7 @@
 $(function() {
   console.log("ready!");
 
-  $( ".logo" ).load( "partials/logo.svg");
+  // $( ".logo" ).load( "partials/logo.svg");
   $( ".social-links" ).load( "partials/social_links.html")
   // $( ".moon-content").load( "partials/moon.html")
 
@@ -21,7 +21,7 @@ $(function() {
   });
 
   function toggleHidden() {
-    var menuText = $('.wrapper').hasClass('hide') ? 'OTHER PROJECTS' : 'CLOSE';
+    var menuText = $('.wrapper').hasClass('hide') ? 'PROJECTS' : 'CLOSE';
     $('.wrapper').toggleClass('hide show', 700);
     $('.hot-spot').toggleClass('hideable');
     $('.menu-text').text(menuText);

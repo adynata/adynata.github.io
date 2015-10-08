@@ -1,0 +1,27 @@
+.moon-content {
+  height: 100%;
+}
+
+.carousel-view {
+	position: relative;
+  float: right;
+	height: auto;
+	width: 50%;
+  margin-right: 25px;
+  /*margin-left: auto;
+	margin-right: auto;*/
+}
+
+.moon-about {
+  position: relative;
+  float: left;
+  width: 40%;
+  height: auto;
+}
+
+@media(max-width: 700px){
+  .carousel-view {
+    width: 100%;
+    float: left;
+  }
+}
