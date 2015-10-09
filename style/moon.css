@@ -14,7 +14,7 @@
 	position: relative;
   float: right;
 	height: auto;
-	width: 50%;
+	width: 53%;
 }
 
 .moon-about {
@@ -91,7 +91,14 @@
   width: 150px;
 }
 
-@media (max-width: 700px){
+
+
+@media(max-width: 850px){
+  .secret-moon {
+    display: block;
+  }
+}
+@media(max-width: 718px){
   .carousel-view {
     width: 100%;
     float: left;
@@ -99,14 +106,11 @@
 
   .moon-about {
     width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /*margin: 10px;*/
   }
   .secret-moon {
     display: none;
-  }
-}
-
-@media (max-width: 850px){
-  .secret-moon {
-    display: block;
   }
 }

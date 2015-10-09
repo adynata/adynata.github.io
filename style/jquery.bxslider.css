@@ -112,8 +112,8 @@
 	display: inline;
 	height: auto;
 	width: auto;
-	margin: 15px;
-	padding: 10px;
+	margin: 1px;
+	padding: 1px;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
@@ -215,8 +215,8 @@
 
 .thumbs img {
 	display: inline;
-	height: 10%;
-	width: 10%;
+	height: 8%;
+	width: 8%;
 	border: 2px black solid;
 }
 
