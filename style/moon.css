@@ -1,5 +1,13 @@
+
 .moon-content {
+  position: relative;
+  background-color: #282C34;
+  display: block;
+  height: auto;
+  overflow: auto;
   height: 100%;
+  padding: 25px;
+
 }
 
 .carousel-view {
@@ -7,21 +15,98 @@
   float: right;
 	height: auto;
 	width: 50%;
-  margin-right: 25px;
-  /*margin-left: auto;
-	margin-right: auto;*/
 }
 
 .moon-about {
   position: relative;
   float: left;
-  width: 40%;
-  height: auto;
+  width: 45%;
+  height: 100%;
+  margin: 10px;
+  /*margin-left: 35px;*/
+  margin-right: 0px;
+  background-color: grey;
+  min-height: 500px;
+
 }
 
-@media(max-width: 700px){
+.moon-article, .moon-credits {
+  margin: 15%;
+  margin-top: 0px;
+  font-size: .8em;
+}
+
+.moon-credits {
+  display: none;
+}
+
+.moon-about h1 {
+  padding-top: 5%;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.moon-about ul {
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 12%;
+  width: 90%;
+  border: .5px black solid;
+  font-weight: lighter;
+  color: #EEE8D8;
+}
+
+.moon-about li {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.moon-header a:hover {
+  color: #FAEBC4;
+  font-weight: normal;
+}
+
+.transparent {
+  background-color: rgba(90, 90, 90, 0.5);
+  border-radius: 1.5px;
+}
+
+.secret-moon {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  display: block;
+  padding-right: 95px;
+  padding-top: 15px;
+  float: right;
+  background-color: none;
+  display: none;
+}
+.secret-moon-png {
+  height: 150px;
+  width: 150px;
+}
+
+@media (max-width: 700px){
   .carousel-view {
     width: 100%;
     float: left;
+  }
+
+  .moon-about {
+    width: 100%;
+  }
+  .secret-moon {
+    display: none;
+  }
+}
+
+@media (max-width: 850px){
+  .secret-moon {
+    display: block;
   }
 }

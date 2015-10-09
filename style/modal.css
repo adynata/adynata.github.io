@@ -4,7 +4,7 @@
   padding: 20px;
   padding-right: 25px;
   width: 50%;
-  height: 60%;
+  height: 50%;
   display: none;
   position: absolute;
   top: 0;
@@ -57,28 +57,39 @@
 .contact-modal .close:hover { color: #666; }
 
 .contact-modal form {
-  height: 95%;
+  height: 80%;
 }
 
 .contact-modal input, .contact-modal textarea {
   font-weight: 200;
-  width: 100%;
-  border: 1px solid red;
+  width: 97%;
+  padding-right: 5px;
+  border: 2px #5f5f5f solid;
   border-radius: 2px;
   margin: 3px;
   background-color: white;
+  vertical-align: middle;
+  line-height: normal;
 }
 
 .contact-modal textarea {
   height: 60%;
   font-size: 13px;
+  outline: none;
+  resize: none;
+
+}
+
+.contact-modal textarea::-webkit-input-placeholder {
+   padding: 5px;
 }
 
 .contact-modal button {
   float: right;
   padding: 0px 7px;
-  padding-top: 3px;
-  border: 1px solid red;
+  padding-top: 2px;
+  margin-top: 5px;
+  border: 2px #5f5f5f solid;
   margin-bottom: 5px;
   border-radius: 2px;
   background-color: pink;
