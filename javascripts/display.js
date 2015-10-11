@@ -1,5 +1,4 @@
 $(function() {
-  console.log("ready!");
 
   // $( ".logo" ).load( "partials/logo.svg");
   $( ".social-links" ).load( "partials/social_links.html")
