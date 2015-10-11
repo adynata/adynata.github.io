@@ -158,11 +158,11 @@ function resizeLionText(length) {
 
 function getFontSize(length) {
   if (length > 300){
-    return "16px";
+    return "20px";
   } else if (length < 50){
-    return "30px";
+    return "36px";
   } else {
-    return "22px";
+    return "26px";
   };
 };
 

@@ -6,10 +6,11 @@
     width: 100%;
     /*display: none;*/
     overflow: auto;
+    display: none;
 }
 
 .lion-main {
-  background-color: pink;
+  background-color: #4D8D94;
   width: calc(100% - 460px);
   height: 650px;
   float: left;
@@ -17,15 +18,16 @@
   margin-right: auto;
 }
 
-/*.liontext {
+.liontext {
   position: relative;
-  width: 50%;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 200px;
-}*/
+  height: 400px;
+  background-color: red;
+}
 
-.top-lion {
+.left-lion {
   display: inline;
   float: left;
   position: relative;
@@ -34,7 +36,7 @@
   height: 650px;
 }
 
-.bottom-lion {
+.right-lion {
  display: inline;
  float: left;
  position: relative;
@@ -43,22 +45,22 @@
  height: 650px;
 }
 
-
 .lion-header h1 {
   width: 100%;
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Martel Sans';
-  color: #afafaf;
+  color: #fff;
   font-weight: 100;
+  padding-top: 8px;
 }
 
 
  .lion-buttons {
   color: white;
   height: auto;
-  border: 1px solid #4D8D94;
-  background-color: #4D8D94;
+  /*border: 1px solid #4D8D94;*/
+  background-color: #474550;
   width: auto;
   height: auto;
   text-align: center;
@@ -75,6 +77,7 @@
 
 .lion-buttons li {
   display: inline;
+  width: 120px;
 }
 
 .get-new {
@@ -112,7 +115,7 @@
   table-layout:fixed;
   vertical-align: middle;
   line-height: normal;
-  width: inherit;
+  padding: 45px;
   text-align: inherit;
 }
 
@@ -120,4 +123,56 @@
 
 i {
   font-style: italic;
+}
+
+@media (min-width: 1132px) {
+  .top-lion, .bottom-lion {
+    display: none;
+  }
+}
+
+@media (max-width: 1132px) {
+ .left-lion, .right-lion {
+    display: none;
+  }
+  .top-lion, .bottom-lion {
+    display: block;
+  }
+  .lion-main {
+    float: none;
+    width: 80%;
+    height: auto;
+  }
+
+  .liontext {
+    width: auto;
+    height: auto;
+  }
+  .lion-buttons {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 568px) {
+  /*.top-lion {
+    display: block;
+  }
+  .bottom-lion {
+    display: block;
+  }*/
+  .lion-main {
+    width: 100%;
+  }
+  .liontext {
+    width: 100%;
+  }
+  .lion-buttons {
+    width: 100%;
+  }
+  .lion-main img {
+    display: block;
+    width: 100%;
+  }
+
 }
