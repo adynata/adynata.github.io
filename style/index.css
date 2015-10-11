@@ -132,16 +132,25 @@ header {
 }
 
 
-.lion-content .about-content .bionn-content {
+.about-content .bionn-content {
   position: relative;
   display: none;
 }
 
 .logo h1 {
-  font-size: 2em;
+  font-size: 1.7em;
   margin-top: 6px;
   margin-right: 35px;
   line-height: 66px;
+  background-color: brown;
+  text-align: center;
+
+  width: 260px;
+  float: right;
+}
+
+.logo span {
+  font-size: 1.6em;
 }
 
 .about-content {
@@ -160,7 +169,7 @@ header {
     display: block;
     height: auto;
     width: 100%;
-    display: none;
+    /*display: none;*/
     overflow: auto;
 }
 
@@ -216,13 +225,14 @@ footer {
   position: relative;
   text-align: center;
   float: right;
-  width: 260px;
   height: 100%;
+  width: 260px;
+
   font-size: 1em;
   z-index: 800;
   background-color: yellow;
   font-size: 1em;
-  margin-right: 30px;
+  margin-right: 35px;
   line-height: 44px;
 }
 
