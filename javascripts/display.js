@@ -1,8 +1,13 @@
 $(function() {
 
   // $( ".logo" ).load( "partials/logo.svg");
-  $( ".social-links" ).load( "partials/social_links.html")
+  $( ".social-links" ).load( "partials/social_links.html");
   // $( ".moon-content").load( "partials/moon.html")
+
+  $( ".about-content" ).load( "partials/about.html");
+
+  $( ".project-elements" ).load( "partials/project_menu.html")
+
 
   $('.menu-text').click( function() {
     toggleHidden();
@@ -56,4 +61,13 @@ $(function() {
     });
   });
 
+  $('.about').on('click', function() {
+    // set all other features to display: none
+    $('.lion-content').css("display", "none");
+    $('.moon-content').css("display", "none");
+    $('.bionn-content').css("display", "none");
+    $('.lion-content').css("display", "none");
+    $('.about-content').css("display", "block");
   });
+
+});

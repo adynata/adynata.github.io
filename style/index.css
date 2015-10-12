@@ -54,17 +54,10 @@ html, body {
 }
 
 .menu-text:hover {
-  color: #581616;
+  opacity: .8;
 }
 
-.project-elements {
-  position: relative;
-  width: calc(100% - 55px);
-  height: 100%;
-  float: right;
-  z-index: 700;
-  overflow: auto;
-}
+
 
 .wrapper {
   position: absolute;
@@ -123,7 +116,7 @@ html, body {
 }
 
 .menu-sidebar:hover {
-  background-color: rgb(164, 179, 166);
+  opacity: .8;
 }
 
 header {
@@ -147,42 +140,22 @@ header {
 }
 
 .logo h1 {
-  font-size: 1.7em;
+  font-size: 34px;
   margin-top: 6px;
   margin-right: 35px;
   line-height: 66px;
-  background-color: rgb(59, 57, 52);
+  /*background-color: rgb(209, 207, 201);*/
   text-align: center;
   width: 260px;
-  color: #b4f2eb;
+  color: #DDE030;
 
   float: right;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
-.logo span {
-  font-size: 1.6em;
-}
-
-.about-content {
-  position: relative;
-  background-color: red;
-  display: block;
-  height: auto;
-  width: 100%;
-  display: none;
-  overflow: auto;
-}
-
-.lion-content {
-    position: relative;
-    background-color: teal;
-    display: block;
-    height: auto;
-    width: 100%;
-    /*display: none;*/
-    overflow: auto;
-}
+/*.logo span {
+  font-size: 24px;
+}*/
 
 
 
@@ -211,7 +184,7 @@ footer {
   float: left;
   height: 40%;
   width: 100%;
-  background-color: #b4f2eb;
+  background-color: rgb(223, 223, 223);
 }
 
 .header-nav-links ul {
@@ -222,14 +195,24 @@ footer {
   list-style-type: none;
   width: auto;
   height: 100%;
-  color: white;
+  color: #DFDFDF;
   text-decoration: none;
-  background-color: orange;
+  font-weight: lighter;
+  text-align: center;
+  font-variant-caps: small-caps;
 }
 
 .header-nav-links ul li {
   float: left;
+  opacity: .8;
+  color: white;
+  background-color: #2C378E;
   top: 5px;
+}
+
+.header-nav-links ul li:hover {
+  opacity: .6;
+  color: white;
 }
 
 .header-nav-links h2 {
@@ -241,22 +224,22 @@ footer {
   color:rgb(112, 108, 98);
   font-size: 1em;
   z-index: 800;
-  background-color: #b4f2eb;
-  font-size: 1em;
+  background-color: rgb(223, 223, 223);
+  font-weight: lighter;
   margin-right: 35px;
   line-height: 44px;
 }
 
 .nav-buttons {
   text-align: center;
-  line-height: 44px;
+  line-height: 46px;
   height: 100%;
   width: 120px;
-  border-left: 1px solid white;
+  border-left: 2px solid  #DFDFDF;
 }
 
 .contact {
-   border-right: 1px solid white;
+   border-right: 2px solid  #DFDFDF;
 }
 
 .nav-buttons:hover {
@@ -369,25 +352,26 @@ li.projects {
     }
 
     .header-nav-links ul {
-      margin-right: auto;
-      margin-left: auto;
+      margin-right: calc(50% - 200px);
+      margin-left: calc(50% - 200px);
       float: none;
       list-style-type: none;
       text-align: center;
-      width: 100%;
+      width: 400px;
       height: 100%;
     }
 
     .nav-buttons {
       font-size: .8em;
-      width: calc(33% - .8px);
+      width: calc(32% - 1px);
     }
 
     .header-nav-links ul .contact {
-      border-right: 2px solid white;
+      border-right: 2px solid #DFDFDF;
     }
     .header-nav-links ul .projects {
-      border-left: 2px solid white;
+      border-left: 2px solid #DFDFDF
+      ;
     }
 }
 

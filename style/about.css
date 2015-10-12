@@ -1,0 +1,97 @@
+.about-content {
+  position: relative;
+  background-color: red;
+  display: block;
+  height: auto;
+  width: 100%;
+  /*display: none;*/
+  overflow: auto;
+}
+
+
+.about-intro{
+  width: 60%;
+  margin-right: auto;
+  margin-left: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  height: 200px;
+  background-color: purple;
+  float: left;
+}
+
+.about-hello {
+  font-size: .7em;
+  background-color: orange;
+  float: right;
+  width: calc(100% - 200px);
+  height: 60px;
+}
+
+.about-portrait  {
+  width: auto;
+  float: left;
+  background-color: white;
+}
+
+.about-portrait img {
+  height: 200px;
+  border-radius: 100px;
+  width: 200px;
+}
+
+.about-skillz {
+  float: right;
+  display: block;
+  background-color: yellow;
+  width: calc(100% - 200px);
+  height: 80px;
+
+}
+
+.about-resume {
+  display: inline;
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin-right: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.about-info {
+  margin-right: 60px;
+  margin-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  height: 200px;
+  float: left;
+  background-color: white;
+  width: 100%;
+  margin: 0;
+}
+
+.reservoir-about, .github-widget {
+  width: calc(50% - 80px);
+  height: 100%;
+  margin-bottom: 20px;
+
+}
+
+.github-widget {
+  margin-left: 80px;
+  float: left;
+  background-color: yellow;
+}
+
+.reservoir-about {
+  margin-right: 80px;
+  float: right;
+  background-color: teal;
+
+}
