@@ -6,13 +6,14 @@
   width: 100%;
   display: none;
   overflow: auto;
+  font-weight: lighter;
 }
 
 
 .about-intro{
-  width: 60%;
+  width: 50%;
   margin-right: auto;
-  margin-left: 80px;
+  margin-left: 15%;
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
@@ -21,46 +22,85 @@
   float: left;
 }
 
+.subjectz {
+  font-weight: 200;
+  color: #e66e54;
+}
+
 .about-hello {
-  font-size: .7em;
+  font-size: .9em;
   background-color:  #464749;
   float: right;
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 60px;
+  /*margin-top: 15px;*/
+  color: #bcebe1;
 }
 
 .about-portrait  {
   width: auto;
   float: left;
   background-color: none;
+  margin-right: 20px
 }
 
 .about-portrait img {
   height: 200px;
-  border-radius: 100px;
   width: 200px;
+  border-radius: 120px;
+
+}
+
+.portrait-circle {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 120px;
 }
 
 .about-skillz {
   float: right;
   display: block;
   background-color:  #464749;
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 80px;
+  margin-left: 15px;
+  color: #bcebe1;
 
 }
 
+.looking {
+  font-size: .8em;
+}
 .about-resume {
   display: inline;
   position: relative;
   float: right;
-  width: 200px;
-  height: 200px;
-  margin-right: 80px;
+  width: auto;
+  height: auto;
+  margin-right: 15%;
   margin-top: 80px;
   margin-bottom: 80px;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.resume-circle {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 200px;
   background-color: white;
-  border-radius: 100px;
+  border-radius: 120px;
+}
+
+.resume-circle svg {
+  margin-top: 30px;
+  height: 135px;
+  width: 135px;
 }
 
 .about-info {
@@ -93,5 +133,74 @@
   margin-right: 80px;
   float: right;
   background-color: #515e05;
+
+}
+
+
+@media (max-width: 1000px){
+
+  .about-intro {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+    display: block;
+  }
+  .about-resume {
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+
+  .resume-circle{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+
+@media (max-width: 700px){
+  .about-hello, .about-skillz {
+    float: left;
+    display: block
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .about-portrait {
+    width: 100%;
+  }
+
+  .about-skillz {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: auto;
+  }
+  .portrait-circle {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .about-intro {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+
+  }
+
+  .about-resume {
+
+    margin-top: 220px;
+  }
+  .looking {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
 }

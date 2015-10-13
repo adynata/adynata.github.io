@@ -1,10 +1,4 @@
-:root {
-  --blue-hl: #60d9ca;
-  --orange-hl: #e48618;
-  --grey: rgb(59, 57, 52);
-  --lightgrey: rgb(164, 179, 166);
-  --red:   #c63b0f;
-}
+
 
 html, body {
   /*-webkit-background-size: cover;
@@ -137,6 +131,15 @@ header {
 .about-content .bionn-content {
   position: relative;
   display: none;
+}
+
+.menu-content {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  display: none;
+  overflow: auto;
 }
 
 .logo h1 {

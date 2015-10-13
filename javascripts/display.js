@@ -75,7 +75,8 @@ $(function() {
   });
 
   $('.projects').on('click', function() {
-    toggleHidden();
+    removeContentClass();
+    $('.menu-content').css("display", "block");
   });
 
 
@@ -85,6 +86,8 @@ $(function() {
     $('.moon-content').css("display", "none");
     $('.bionn-content').css("display", "none");
     $('.lion-content').css("display", "none");
+    $('.menu-content').css("display", "none");
+
   }
 
 });

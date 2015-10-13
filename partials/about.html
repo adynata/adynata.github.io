@@ -4,14 +4,64 @@
       Hello, I'm Claire.
     </div>
     <div class="about-portrait">
-      <img src="images/self.jpg"/>
+      <div class="portrait-circle">
+        <img src="images/self.jpg"/>
+      </div>
     </div>
     <div class="about-skillz">
       I like making things with <span class="subjectz">many different tools.</span>
+      <br>
+      <br>
+      <p class="looking">I'm currently seeking an engineering position in the SF Bay Area. I your team is looking for an fledgling developer with a propensity for challenge, reach out!
+      </p>
     </div>
   </div>
   <div class="about-resume">
-    this is where my resume goes. Pretend it's here!
+    <div class="resume-circle">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+    <rect x="106" y="62" fill="#4D4D4D" width="290" height="375"/>
+    <rect x="193" y="102" fill="#F4F5E7" width="116" height="21"/>
+    <rect x="137" y="165" fill="#F4F5E7" width="228" height="17"/>
+    <rect x="137" y="234" fill="#F4F5E7" width="228" height="16"/>
+    <rect x="137" y="305" fill="#F4F5E7" width="228" height="16"/>
+    <rect x="137" y="377" fill="#F4F5E7" width="228" height="16"/>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    <g>
+    </g>
+    </svg>
+  </div>
+  RESUME
   </div>
 </div>
 <div class="about-info">
@@ -21,4 +71,48 @@
   <div class="reservoir-about">
     thing I made
   </div>
+  <script>
+    $(function() {
+        var counter = 0
+        var interests = ["Ruby",
+                         "Rails",
+                         "paper",
+                         "pens",
+                         "SQL",
+                         "Adobe CS",
+                         "Sketch",
+                         "JavaScript",
+                         "cameras",
+                         "HTML",
+                         "paints & pigments",
+                         "JQuery",
+                         "people",
+                         "D3",
+                         "spreadsheets",
+                         "CSS",
+                         "sewing machines",
+                         "power tools",
+                         "hand tools",
+                         "printing presses",
+                         "SMS",
+                         "React",
+                         "wheelbarrows",
+                         "community",
+                         "irrigation equipment",
+                         "hot glue guns",
+                         "soldering irons",
+                         "data",
+                         "knitting needles",
+                         "utility knives"]
+        setInterval(function(){
+          $('.subjectz').html(interests[counter]);
+          console.log(interests[counter])
+          if (counter === interests.length) {
+            counter = 0
+          } else {
+          counter += 1
+          }
+        }, 2000);
+      });
+  </script>
 </div>

@@ -10,6 +10,7 @@
 
 .menu-container {
   width: 80%;
+  display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -21,8 +22,11 @@
   height: calc(100% - 200px);
   width: calc(50%- 2px);
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   max-width: 420px;
+  min-width: 370px;
 }
 
 .menu-bits {
@@ -56,8 +60,8 @@
 }
 
 .project img {
-  width: 80%;
-  height: 75%;
+  width: 150px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -92,7 +96,6 @@
 
 .minor-projects ul {
   width: 100%;
-  margin-right: auto;
   float: left;
   margin-right: 300px;
   color: #DDE030;
@@ -101,4 +104,32 @@
 
 .project:hover {
   opacity: 1;
+}
+
+@media(max-width: 1000px){
+  .menu-atoms, .menu-bits {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+}
+
+@media(max-width: 480px){
+  .project {
+    width: 48%;
+    height: 200px;
+
+  }
+
+  .menu-container {
+    width: 100%;
+  }
+  .minor-projects ul {
+    width: auto;
+    padding: 10%;
+  }
+
+
 }
