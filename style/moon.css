@@ -7,7 +7,7 @@
   overflow: auto;
   height: 100%;
   padding: 25px;
-  /*display: none;*/
+  display: none;
 }
 
 .carousel-view {
