@@ -46,6 +46,11 @@
   opacity: .8;
 }
 
+.project a {
+  height: 100%;
+  width: 100%;
+}
+
 .project p {
   padding-top: 20px;
 }
@@ -71,6 +76,8 @@
   color: #DDE030;
   font-weight: lighter;
 }
+
+
 
 .minor-projects {
   position: relative;

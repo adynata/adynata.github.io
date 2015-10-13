@@ -6,7 +6,7 @@ $(function() {
 
   $( ".about-content" ).load( "partials/about.html");
 
-  $( ".project-elements" ).load( "partials/project_menu.html")
+  // $( ".project-elements" ).load( "partials/project_menu.html" )
 
 
   $('.menu-text').click( function() {
@@ -51,6 +51,14 @@ $(function() {
     }, 0);
   });
 
+  $('.project').click( function(){
+    // removeContentClass();
+    console.log("clicked lion");
+    // $('.about-content').css("display", "block");
+
+    // toggleHidden();
+
+  });
   // bind a close handler for the modal
   $modal.on('click', '.close', function( e ) {
     e && e.preventDefault();
@@ -62,12 +70,16 @@ $(function() {
   });
 
   $('.about').on('click', function() {
+    removeContentClass();
+    $('.about-content').css("display", "block");
+  });
+
+  function removeContentClass() {
     // set all other features to display: none
     $('.lion-content').css("display", "none");
     $('.moon-content').css("display", "none");
     $('.bionn-content').css("display", "none");
     $('.lion-content').css("display", "none");
-    $('.about-content').css("display", "block");
-  });
+  }
 
 });

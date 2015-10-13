@@ -270,7 +270,7 @@ li.projects {
 }
 
 .social-links svg:hover circle {
-  fill: red;
+  fill: #2C378E;
 }
 
 .social-links svg:hover .i {

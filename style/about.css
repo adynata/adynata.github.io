@@ -1,10 +1,10 @@
 .about-content {
   position: relative;
-  background-color: red;
+  background-color:  #464749;
   display: block;
   height: auto;
   width: 100%;
-  /*display: none;*/
+  display: none;
   overflow: auto;
 }
 
@@ -17,13 +17,13 @@
   padding-bottom: 80px;
   position: relative;
   height: 200px;
-  background-color: purple;
+  background-color:  #464749;
   float: left;
 }
 
 .about-hello {
   font-size: .7em;
-  background-color: orange;
+  background-color:  #464749;
   float: right;
   width: calc(100% - 200px);
   height: 60px;
@@ -32,7 +32,7 @@
 .about-portrait  {
   width: auto;
   float: left;
-  background-color: white;
+  background-color: none;
 }
 
 .about-portrait img {
@@ -44,7 +44,7 @@
 .about-skillz {
   float: right;
   display: block;
-  background-color: yellow;
+  background-color:  #464749;
   width: calc(100% - 200px);
   height: 80px;
 
@@ -86,12 +86,12 @@
 .github-widget {
   margin-left: 80px;
   float: left;
-  background-color: yellow;
+  background-color: black;
 }
 
 .reservoir-about {
   margin-right: 80px;
   float: right;
-  background-color: teal;
+  background-color: #515e05;
 
 }
