@@ -74,6 +74,11 @@ $(function() {
     $('.about-content').css("display", "block");
   });
 
+  $('.projects').on('click', function() {
+    toggleHidden();
+  });
+
+
   function removeContentClass() {
     // set all other features to display: none
     $('.lion-content').css("display", "none");
