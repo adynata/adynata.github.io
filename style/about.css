@@ -193,14 +193,16 @@
   }
 
   .about-resume {
-
-    margin-top: 220px;
+    margin-top: 250px;
   }
   .looking {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
+  .about-hello {
+    margin-top: 15px;
 
+  }
 
 }
