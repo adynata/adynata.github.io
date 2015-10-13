@@ -1,21 +1,22 @@
 .contact-modal {
-  background-color: #ECECEC;
+  background-color: #cfc8c8;
   margin: auto;
   padding: 20px;
   padding-right: 25px;
   width: 50%;
   height: 50%;
+  min-height: 330px;
   display: none;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  font-weight: bold;
   color: #2c2c2c;
   opacity: 0;
-  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  -webkit-box-shadow: -3px 10px 183px 43px rgba(0,0,0,0.56);
+  -moz-box-shadow: -3px 10px 183px 43px rgba(0,0,0,0.56);
+  box-shadow: -3px 10px 183px 43px rgba(0,0,0,0.56);
   -webkit-transition:
     -webkit-transform 250ms cubic-bezier(0.4, 0.46, 0.32, 1.275),
     opacity 250ms ease-in;
@@ -30,9 +31,12 @@
   backface-visibility: hidden;
   overflow: hidden;
   z-index: 9999;
-  border-radius: 10px;
   /*min-width: 380px;
   min-height: 380px;*/
+}
+
+.my-name-is {
+  margin-left: 12px;
 }
 
 .contact-modal.open {
@@ -63,13 +67,13 @@
 .contact-modal input, .contact-modal textarea {
   font-weight: 200;
   width: 97%;
-  padding-right: 5px;
-  border: 2px #5f5f5f solid;
+  /*padding-right: 5px;*/
   border-radius: 2px;
-  margin: 3px;
+  margin: 4px;
   background-color: white;
   vertical-align: middle;
   line-height: normal;
+  margin-left: 12px
 }
 
 .contact-modal textarea {
@@ -89,12 +93,11 @@
   padding: 0px 7px;
   padding-top: 2px;
   margin-top: 5px;
-  border: 2px #5f5f5f solid;
   margin-bottom: 5px;
   border-radius: 2px;
-  background-color: pink;
+  background-color: #3D4A8A;
   font-weight: bold;
-  color: #2c2c2c;
+  color: white;
 }
 .contact-modal button:hover {
   background-color: #2c2c2c;

@@ -204,9 +204,8 @@ footer {
 
 .header-nav-links ul li {
   float: left;
-  opacity: .8;
   color: white;
-  background-color: #2C378E;
+  background-color: #3D4A8A;
   top: 5px;
 }
 
@@ -314,13 +313,11 @@ li.projects {
       /*display: inline-block;*/
     }
 
-    .header-nav-links {
-      /*height: 220px;*/
-    }
 
     .header-nav-links ul {
       display: inline-block;
       width: 100%
+
     }
     .menu-sidebar {
       display: none;
@@ -366,19 +363,23 @@ li.projects {
       width: calc(32% - 1px);
     }
 
-    .header-nav-links ul .contact {
-      border-right: 2px solid #DFDFDF;
-    }
-    .header-nav-links ul .projects {
-      border-left: 2px solid #DFDFDF
-      ;
-    }
+
 }
 
-@media (max-width: 380px){
+@media (max-width: 400px){
 
 
-
+  .header-nav-links ul .contact {
+    border-right: 2px solid #3D4A8A;
+  }
+  .header-nav-links ul .projects {
+    border-left: 2px solid #3D4A8A;
+    ;
+  }
+  .header-nav-links {
+    /*height: 220px;*/
+    background-color: #3D4A8A;
+  }
 
 
 }
