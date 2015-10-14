@@ -126,13 +126,14 @@
   margin-left: 80px;
   float: left;
   background-color: black;
+  color: white;
 }
 
 .reservoir-about {
   margin-right: 80px;
   float: right;
   background-color: #515e05;
-
+  display: none;
 }
 
 

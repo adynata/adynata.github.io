@@ -14,7 +14,7 @@
 	position: relative;
   float: right;
 	height: auto;
-	width: 53%;
+	width: 52%;
 }
 
 .moon-about {
@@ -55,7 +55,7 @@
 
 .moon-credits li {
   line-height: 56px;
-  font-size: 1em;
+  font-size: 1.2em;
 
   color: white;
 }

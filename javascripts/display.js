@@ -85,8 +85,8 @@ $(function() {
     $('.lion-content').css("display", "none");
     $('.moon-content').css("display", "none");
     $('.bionn-content').css("display", "none");
-    $('.lion-content').css("display", "none");
     $('.menu-content').css("display", "none");
+    $('.about-content').css("display", "none");
 
   }
 

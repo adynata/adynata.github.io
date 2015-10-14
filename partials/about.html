@@ -66,10 +66,14 @@
 </div>
 <div class="about-info">
   <div class="github-widget">
-    chart goes here
+    <p> My GitHub account is at present time <span class"git-ruby"></span>% Ruby,
+      <span class"git-javascript"></span>% JavaScript,
+      <span class"git-css"></span>% CSS,
+      and <span class"git-html"></span>% HTML.
+    </p>
   </div>
   <div class="reservoir-about">
-    thing I made
+
   </div>
   <script>
     $(function() {
@@ -120,10 +124,7 @@
         }
         function gitStats() {
           $.get('https://api.github.com/users/adynata/repos', function(data){
-            console.log(data[0]);
-            var stats = {};
-
-            var langObjs = []
+            // console.log(data[0]);
             var totalCode = 0
             for (var i = 0; i < data.length; i++) {
               (function() {
@@ -136,25 +137,42 @@
                   (function(){
                   if (hashed.hasOwnProperty([keys[j]])) {
                       hashed[keys[j]] += data[keys[j]];
+                      totalCode += data[keys[j]];
                       // console.log(keys[j]);
                       // console.log(data[keys[j]]);
                       // console.log(hashed);
+                      // console.log(data);
                     }
                     })(j);
+                    // console.log(hashed); works here
+
                   }
+                  console.log(hashed);
+                  console.log(totalCode);
+                  var ruby = (Math.floor(hashed["Ruby"]/totalCode*100));
+                  var jScr = (Math.floor(hashed["JavaScript"]/totalCode*100));
+                  var css = (Math.floor(hashed["CSS"]/totalCode*100));
+                  var htMl = (Math.floor(hashed["HTML"]/totalCode*100));
+                  console.log($('.git-css'));
+                  $('.git-ruby').text(ruby);
+                  $('.git-javascript').text(jScr);
+                  $('.git-css').text(css);
+                  $('.git-html').text(htMl);
+                  $('.subjectz').html("BOOM");
+
               });
             })(i);
-            console.log(hashed);
+            // console.log(hashed); wont work here
 
         }
 
       });
-      return hashed;
+      // return hashed;
     }
 
-        var stats = gitStats();
-        console.log("STATS");
-        console.log(stats);
+        gitStats();
+        // console.log("STATS");
+        // console.log(stats);
 
       });
 

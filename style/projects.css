@@ -91,7 +91,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   float: left;
-
+  display: none;
 }
 
 .minor-projects ul {
