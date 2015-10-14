@@ -127,6 +127,7 @@
   float: left;
   background-color: black;
   color: white;
+  display: none;
 }
 
 .reservoir-about {
