@@ -12,7 +12,7 @@
       I like making things with <span class="subjectz">many different tools.</span>
       <br>
       <br>
-      <p class="looking">I'm currently seeking an engineering position in the SF Bay Area. I your team is looking for an fledgling developer with a propensity for challenge, reach out!
+      <p class="looking">I'm currently seeking an engineering position in the SF Bay Area. If your team is looking for an fledgling developer with a propensity for challenge, reach out!
       </p>
     </div>
   </div>
@@ -106,13 +106,62 @@
                          "utility knives"]
         setInterval(function(){
           $('.subjectz').html(interests[counter]);
-          console.log(interests[counter])
           if (counter === interests.length) {
             counter = 0
           } else {
           counter += 1
           }
         }, 2000);
+        var hashed = {
+          "HTML":0,
+          "CSS":0,
+          "JavaScript":0,
+          "Ruby":0
+        }
+        function gitStats() {
+          $.get('https://api.github.com/users/adynata/repos', function(data){
+            console.log(data[0]);
+            var stats = {};
+
+            var langObjs = []
+            var totalCode = 0
+            for (var i = 0; i < data.length; i++) {
+              (function() {
+              languages_url = data[i]["languages_url"];
+
+              $.get(languages_url, function(data){
+
+                var keys = Object.keys(data);
+                for (var j = 0; j < keys.length; j++) {
+                  (function(){
+                  if (hashed.hasOwnProperty([keys[j]])) {
+                      hashed[keys[j]] += data[keys[j]];
+                      // console.log(keys[j]);
+                      // console.log(data[keys[j]]);
+                      // console.log(hashed);
+                    }
+                    })(j);
+                  }
+              });
+            })(i);
+            console.log(hashed);
+
+        }
+
       });
+      return hashed;
+    }
+
+        var stats = gitStats();
+        console.log("STATS");
+        console.log(stats);
+
+      });
+
+
+
+
   </script>
+
+
 </div>

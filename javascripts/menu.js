@@ -14,6 +14,16 @@ $(function() {
     toggleHidden();
   });
 
+  $('.lion-p-f > img').click( function(){
+    removeContentClass();
+    console.log("clicked lion");
+    $('.lion-content').css("display", "block");
+  });
+
+  $('.moon-p-f > img').on("click", function(){
+    removeContentClass();
+    $('.moon-content').css("display", "block");
+  });
 
   function removeContentClass() {
     // set all other features to display: none
