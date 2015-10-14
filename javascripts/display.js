@@ -20,8 +20,10 @@ $(function() {
     }
   });
 
-  $('.bxslider').bxSlider({
-    pagerCustom: '#bx-pager'
+  $("#moon1").load(function() {
+      $('.bxslider').bxSlider({
+        pagerCustom: '#bx-pager'
+      });
   });
 
   function toggleHidden() {
@@ -51,14 +53,14 @@ $(function() {
     }, 0);
   });
 
-  $('.project').click( function(){
+  // $('.project').click( function(){
     // removeContentClass();
-    console.log("clicked lion");
+    // console.log("clicked PROJECT");
     // $('.about-content').css("display", "block");
 
     // toggleHidden();
 
-  });
+  // });
   // bind a close handler for the modal
   $modal.on('click', '.close', function( e ) {
     e && e.preventDefault();
@@ -89,5 +91,6 @@ $(function() {
     $('.about-content').css("display", "none");
 
   }
+
 
 });
