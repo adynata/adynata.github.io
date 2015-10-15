@@ -20,11 +20,17 @@ $(function() {
     }
   });
 
-  $("#moon1").load(function() {
-      $('.bxslider').bxSlider({
-        pagerCustom: '#bx-pager'
-      });
+  $( window ).load(function() {
+    $('.bxslider').bxSlider({
+      pagerCustom: '#bx-pager'
+    });
   });
+
+  setTimeout(function() {
+    var viewportSize = ($('.moon-content').width() / 2) + 5;
+    $("li.slide.item").width(viewportSize);
+    $(".bx-viewport").height(viewportSize);
+  }, 1500);
 
   function toggleHidden() {
     var menuText = $('.wrapper').hasClass('hide') ? 'PROJECTS' : 'CLOSE';
