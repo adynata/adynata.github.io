@@ -18,5 +18,8 @@
   "homepage": "https://github.com/adynata/layoutprotoytyping#readme",
   "dependencies": {
     "lightgallery": "^1.2.5"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.5"
   }
 }
