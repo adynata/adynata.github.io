@@ -24,13 +24,18 @@ $(function() {
     $('.bxslider').bxSlider({
       pagerCustom: '#bx-pager'
     });
+    resizeView();
   });
 
-  setTimeout(function() {
-    var viewportSize = ($('.moon-content').width() / 2) + 5;
-    $("li.slide.item").width(viewportSize);
-    $(".bx-viewport").height(viewportSize);
-  }, 1500);
+  function resizeView() {
+    setTimeout(function() {
+      var viewportSize = ($('.moon-content').width() / 2) + 5;
+      $("li.slide.item").width(viewportSize);
+      $(".bx-viewport").height(viewportSize);
+    }, 1000);
+  }
+
+
 
   function toggleHidden() {
     var menuText = $('.wrapper').hasClass('hide') ? 'PROJECTS' : 'CLOSE';
