@@ -21,16 +21,24 @@ $(function() {
   });
 
   $( window ).load(function() {
+    console.log('now?????');
     $('.bxslider').bxSlider({
       pagerCustom: '#bx-pager'
     });
+    resizeView();
   });
 
-  setTimeout(function() {
-    var viewportSize = ($('.moon-content').width() / 2) + 5;
-    $("li.slide.item").width(viewportSize);
-    $(".bx-viewport").height(viewportSize);
-  }, 1500);
+  function resizeView() {
+    setTimeout(function() {
+      console.log('now!!!');
+      var viewportSize = ($('.moon-content').width() / 2) + 5;
+      console.log('viewportSize: ', viewportSize);
+      $("li.slide.item").width(viewportSize);
+      $(".bx-viewport").height(viewportSize);
+    }, 1000);
+  }
+
+
 
   function toggleHidden() {
     var menuText = $('.wrapper').hasClass('hide') ? 'PROJECTS' : 'CLOSE';
