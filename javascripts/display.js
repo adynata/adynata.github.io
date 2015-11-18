@@ -33,7 +33,7 @@ $(function() {
 
   var
     $launch = $('.contact'),
-    $modal = $('.contact-modal')
+    $modal = $('.contact-modal');
 
   $launch.click( function() {
     console.log("clicked contact");

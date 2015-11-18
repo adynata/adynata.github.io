@@ -86,13 +86,8 @@ html, body {
   /*display: none;*/
 }
 
-.hot-spot:hover {
-  /*background-color: grey;
-  opacity: .2;*/
-}
-
 .hide {
-  transform: matrix(1,0,0,1,1000,0);
+  transform: translateX(85%);
   transition-delay: 0s;
   transition-duration: 0.8s;
   transition-property: transform;
