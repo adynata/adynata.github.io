@@ -6,24 +6,31 @@
   width: 100%;
   /*display: none;*/
   overflow: auto;
-  font-weight: lighter;
+  font-size: 2em;
+}
+
+.about-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 
 .about-intro{
-  width: 50%;
+  width: 70%;
   margin-right: auto;
   margin-left: 15%;
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
   height: 200px;
+  color: #27334a;
   /*background-color:  #464749;*/
   float: left;
 }
 
 .subjectz {
-  font-weight: 200;
+  font-weight: 300;
   color: #f58269;
 }
 
@@ -34,7 +41,7 @@
   width: calc(100% - 250px);
   height: 60px;
   /*margin-top: 15px;*/
-  color: #bcebe1;
+  color: #27334a;
 }
 
 .about-portrait  {
@@ -67,33 +74,46 @@
   width: calc(100% - 250px);
   height: 80px;
   margin-left: 15px;
-  color: #bcebe1;
+  font-size: 1em;
+  color: #27334a;
 
+}
+
+.about-looking {
+  float: left;
+  display: inline-block;
+  width: calc(75% - 200px);
+  padding: 5%;
 }
 
 .looking {
   font-size: .8em;
 }
 .about-resume {
-  display: inline;
+  display: block;
   position: relative;
-  float: right;
-  width: auto;
+  float: left;
+  width: 100%;
   height: auto;
-  margin-right: 15%;
-  margin-top: 80px;
-  margin-bottom: 80px;
   text-align: center;
-  color: white;
-  font-weight: 200;
+  color: #27334a;
+  font-weight: 300;
 }
+
+.resume-circle-container {
+  margin-right: 15%;
+  display: inline-block;
+  width: 200px;
+  float: right;
+}
+
 
 .resume-circle {
   display: block;
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: white;
+  background-color: #4D4D4D;
   border-radius: 120px;
 }
 
@@ -101,6 +121,7 @@
   margin-top: 30px;
   height: 135px;
   width: 135px;
+  fill: white;
 }
 
 .about-info {
@@ -109,33 +130,67 @@
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
-  height: 200px;
+  height: auto;
   float: left;
-  background-color: white;
+  background-color: none;
   width: 100%;
   margin: 0;
 }
 
 .reservoir-about, .github-widget {
-  width: calc(50% - 80px);
-  height: 100%;
+  width: calc(100% - 160px);
+  height: auto;
   margin-bottom: 20px;
+  display: block;
+}
+
+.reservoir-about-picture {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+  border: 3px solid grey;
+  float: left;
+  display: inline-block;
+}
+
+.reservoir-title {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-color:rgba(162, 222, 197, 0.4);
+
+}
+
+.reservoir-about-desc {
+  font-size: .5em;
+  float: right;
+  text-align: left;
+  display: inline-block;
+  width: calc(100% - 226px);
+  padding: 10px;
+}
+
+.reservoir-about-picture img {
+  height: 100%;
+  width: 100%;
 
 }
 
 .github-widget {
   margin-left: 80px;
+  margin-right: 80px;
   float: left;
-  background-color: black;
-  color: white;
-  display: none;
+  background-color: none;
+  color: #27334a;
+  font-size: .7em;
+  text-align: center;
 }
 
 .reservoir-about {
   margin-right: 80px;
-  float: right;
-  background-color: #515e05;
-  display: none;
+  margin-left: 80px;
+  float: left;
+  background-color:rgba(162, 222, 197, 0.2);
 }
 
 
@@ -197,6 +252,7 @@
   .about-resume {
     margin-top: 250px;
   }
+
   .looking {
     width: 85%;
     margin-left: auto;

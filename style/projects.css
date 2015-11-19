@@ -42,12 +42,15 @@
 .project {
   width: 48%;
   height: 220px;
-  display: inline-block;
+  display: block;
   padding-bottom: 5px;
   text-align: center;
   font-weight: lighter;
   color: white;
   opacity: .8;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .project a {
