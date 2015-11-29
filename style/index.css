@@ -42,7 +42,7 @@ html, body {
   -webkit-transform: translateY(-50%);
   z-index: 9999;
   width: 100px;
-  height: 130px;
+  height: 135px;
   color: rgb(59, 57, 52);
   transform: rotate(270deg);
   font-size: 1.2em;
@@ -315,9 +315,9 @@ li.projects {
       display: none;
     }
 
-    .menu-components-wrapper {
+    /*.menu-components-wrapper {
       display: none;
-    }
+    }*/
 
     .wrapper {
       width: 100%;

@@ -7,6 +7,26 @@ $(function() {
   $('#about').on('click', function() {
     $('.moon-credits').css('display', 'none');
     $('.moon-article').css('display', 'block');
+    moonTextFit();
   });
+
+  $(window).on('resize',function() {
+    moonTextFit();
+  });
+
+  function moonTextFit() {
+    var height = $('.moon-article').css('height').slice(0,-2);
+    $('.moon-article').textfill({
+      maxFontPixels: 24,
+      minFontPixels: 11,
+      explicitHeight: height,
+      debug: true
+    });
+  }
+
+
+  // setTimeout(function() {
+  //   $('#about').click();
+  // }, 1000);
 
 });
