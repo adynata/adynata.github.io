@@ -2,10 +2,9 @@ $(function() {
 
   $('.lion-p > img').click( function(){
     removeContentClass();
-    console.log("clicked lion");
     $('.lion-content').css("display", "block");
     toggleHidden();
-
+    $('.about-lf').click();
   });
 
   $('.moon-p > img').on("click", function(){
@@ -16,8 +15,9 @@ $(function() {
 
   $('.lion-p-f > img').click( function(){
     removeContentClass();
-    console.log("clicked lion");
     $('.lion-content').css("display", "block");
+    $('.about-lf').click();
+
   });
 
   $('.moon-p-f > img').on("click", function(){

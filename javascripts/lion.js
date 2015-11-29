@@ -122,39 +122,42 @@ var allLionFacts =
 {"Order":"nil", "Date":"9/25/2014", "Show?":"n", "Fact":"Hey Quetzal! Happy birthday. I have a question for you: would you want the keys to the Lion Facts! distribution center?"},
 {"Order":"212", "Date":"10/11/2014", "Show?":"y", "Fact":"Lions are 12 parts heart, one very large part matter as yet unidentified, 2 parts nonsense, 5 parts tea, 3 parts roar, and the rest stripes."}];
 
-
-$('.lionarticle').html(aboutLionFacts).css("font-size", "16px");
-
 $('.about-lf').on("click", function() {
-    console.log("begin place");
     $(".lionarticle").html(aboutLionFacts);
-    $(".lionarticle").css("font-size","16px");
+    lionTextFit();
     $('.fact-order').text("");
 });
 
 $('.get-new').click(function() {
-    console.log("begin place");
     var factoid = getFact();
-    console.log(factoid);
-    $(".lionarticle").text(factoid["Fact"]);
-    $('.fact-order').text(factoid["Order"]+"/215");
-    resizeLionText(factoid["Fact"].length);
-    console.log($('.fact-order'));
+    $(".lionarticle").text(factoid.Fact);
+    $('.fact-order').text(factoid.Order+"/215");
+    lionTextFit();
 });
 
+$(window).on('resize',function() {
+  lionTextFit();
+});
+
+function lionTextFit() {
+  $('.liontext').textfill({
+    maxFontPixels: 40,
+    minFontPixels: 12,
+    explicitHeight: 380,
+    debug: false
+  });
+}
 
 function placeAbout() {
-  console.log("begin place");
   $(".lionarticle").html(aboutLionFacts);
-  $(".lionarticle").css("font-size","16px");
-};
+  lionTextFit();
+}
 
 function resizeLionText(length) {
   var lionFactsText = document.getElementsByClassName("lionarticle");
   var fontSize = getFontSize(length);
-  console.log("font size set to: " + fontSize);
   lionFactsText[0].style.fontSize = fontSize;
-};
+}
 
 function getFontSize(length) {
   if (length > 300){
@@ -163,23 +166,20 @@ function getFontSize(length) {
     return "36px";
   } else {
     return "26px";
-  };
-};
+  }
+}
 
 var getFact = function() {
   var jsonLion = {};
-  console.log("get fact");
   while (jsonLion["Show?"] !== "y"){
     var indexPos = Math.floor(Math.random()*allLionFacts.length);
-    console.log("the index position is " + indexPos);
+    // console.log("the index position is " + indexPos);
     jsonLion =  allLionFacts[indexPos];
-    console.log(jsonLion);
-  };
+  }
   return jsonLion;
 };
 
 
+placeAbout();
 
-
-
-})
+});

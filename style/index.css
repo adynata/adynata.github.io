@@ -45,13 +45,12 @@ html, body {
   height: 130px;
   color: rgb(59, 57, 52);
   transform: rotate(270deg);
+  font-size: 1.2em;
 }
 
 .menu-text:hover {
-  opacity: .8;
+  color: black;
 }
-
-
 
 .wrapper {
   position: absolute;
@@ -105,7 +104,7 @@ html, body {
 }
 
 .menu-sidebar:hover {
-  opacity: .8;
+  background-color: #DDE030;
 }
 
 header {
@@ -151,12 +150,6 @@ header {
   font-weight: 100;
 }
 
-/*.logo span {
-  font-size: 24px;
-}*/
-
-
-
 .main-content {
   position: relative;
   height: auto;
@@ -168,8 +161,6 @@ footer {
   height: 110px;
   background-color: rgb(59, 57, 52);
 }
-
-
 
 .header-content {
   position: relative;

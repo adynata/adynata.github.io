@@ -51,6 +51,8 @@
   <div class="about-intro">
     <div class="about-hello">
       Hello, I'm Claire.
+      <br>
+      <br>
     </div>
     <div class="about-portrait">
       <div class="portrait-circle">
@@ -125,7 +127,7 @@
         <img src="images/resrev.png"/>
       </div>
       <div class="reservoir-about-desc">
-        The California Reservoir Review is an interactive map that visualizes public data related to the most significant reservoirs in the state and how their levels have fluctuated over the last 25 years. The app was built with D3 and NVD3 on a Rails back end, using Nokogiri. 
+        <span>The California Reservoir Review is an interactive map that visualizes public data related to the most significant reservoirs in the state and how their levels have fluctuated over the last 25 years. The app was built with D3 and NVD3 on a Rails back end, using Nokogiri.</span>
       </div>
     </div>
     <div class="github-widget">
@@ -145,9 +147,10 @@
         var counter = 0
         var interests = ["Ruby.",
                          "Rails.",
+                         "D3.",
                          "paper.",
-                         "pens.",
                          "SQL.",
+                         "pens.",
                          "Adobe CS.",
                          "Sketch.",
                          "JavaScript.",
@@ -156,7 +159,6 @@
                          "paints & pigments.",
                          "JQuery.",
                          "people.",
-                         "D3.",
                          "spreadsheets.",
                          "CSS.",
                          "sewing machines.",
@@ -203,10 +205,6 @@
                   if (hashed.hasOwnProperty([keys[j]])) {
                       hashed[keys[j]] += data[keys[j]];
                       totalCode += data[keys[j]];
-                      // console.log(keys[j]);
-                      // console.log(data[keys[j]]);
-                      // console.log(hashed);
-                      // console.log(hashed, "inside loop");
                     }
                     })(j);
 
@@ -215,11 +213,6 @@
                     setStats(hashed);
                   }, 2000);
 
-                  console.log(hashed, "last");
-
-                  // console.log(hashed);
-                  // console.log(totalCode)
-
               });
             })(i);
             function setStats(hashed) {
@@ -227,28 +220,36 @@
               var jScr = (Math.floor(hashed["JavaScript"]/totalCode*100));
               var css = (Math.floor(hashed["CSS"]/totalCode*100));
               var htMl = (Math.floor(hashed["HTML"]/totalCode*100));
-              // console.log(ruby, totalCode, "set stats");
-              console.log($('.git-ruby').text);
+
               $('.git-ruby').text(ruby);
               $('.git-javascript').text(jScr);
               $('.git-css').text(css);
               $('.git-html').text(htMl);
             }
-            // console.log(hashed); wont work here
 
         }
 
       });
-      // return hashed;
     }
 
         gitStats();
-        // console.log("STATS");
-        // console.log(stats);
 
       });
+    function resTextFit() {
+      $('.reservoir-about-desc').textfill({
+        widthOnly: false,
+        maxFontPixels: 24,
+        minFontPixels: 12,
+        changeLineHeight: false,
+        explicitHeight: 200,
+      });
+    }
 
+    $(window).on('resize',function() {
+      resTextFit();
+    });
 
+    resTextFit();
 
 
   </script>

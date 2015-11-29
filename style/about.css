@@ -35,11 +35,11 @@
 }
 
 .about-hello {
-  font-size: .9em;
+  font-size: 1em;
   /*background-color:  #464749;*/
   float: right;
   width: calc(100% - 250px);
-  height: 60px;
+  height: 80px;
   /*margin-top: 15px;*/
   color: #27334a;
 }
@@ -55,7 +55,7 @@
   height: 200px;
   width: 200px;
   border-radius: 120px;
-  border: 3px solid #464749;
+  border: 5px solid #464749;
 
 }
 
@@ -74,7 +74,7 @@
   width: calc(100% - 250px);
   height: 80px;
   margin-left: 15px;
-  font-size: 1em;
+  font-size: .9em;
   color: #27334a;
 
 }
@@ -158,16 +158,17 @@
   width: 100%;
   height: auto;
   background-color:rgba(162, 222, 197, 0.4);
-
 }
 
 .reservoir-about-desc {
-  font-size: .5em;
+  /*font-size: .5em;*/
   float: right;
   text-align: left;
   display: inline-block;
   width: calc(100% - 226px);
+  height: auto;
   padding: 10px;
+  line-height: 26px;
 }
 
 .reservoir-about-picture img {
@@ -220,19 +221,20 @@
 @media (max-width: 700px){
   .about-hello, .about-skillz {
     float: left;
-    display: block
+    display: block;
     height: auto;
     width: 100%;
     text-align: center;
   }
+
   .about-portrait {
     width: 100%;
   }
 
   .about-skillz {
-    margin-top: 10px;
-    margin-left: 0px;
-    width: auto;
+    margin-top: 25px;
+    /*margin-left: 0px;*/
+    width: 100%;
   }
   .portrait-circle {
     float: none;

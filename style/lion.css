@@ -1,68 +1,92 @@
 .lion-content {
     position: relative;
     background-color: #464749;
-    height: 100%
-    width: 100%;
-    display: none;
-    overflow: auto;
-    /*height: auto;*/
-    /*width: 100%;*/
+    height: 550px;
+    width: auto;
     display: none;
     overflow: auto;
 }
 
 .lion-main {
-  background-color: #474550;
-  width: calc(100% - 360px);
-  height: auto;
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 50;
+  position: absolute;
 }
 
+.lion-header, .liontext, .lion-console, .fact-order {
+  position: relative;
+  display: block;
+  width: calc(100% - 330px);
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background-color: red;
+}
+
+.lion-console, .lion-header, .fact-order {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.lion-console {
+  height: 40px;
+  background-color: #474550;
+}
+
+.lion-images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
 .liontext {
   position: relative;
-  float: left;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-  height: 400px;
+  height: 345px;
   color: #474550;
   font-weight: 200;
+  font-size: 1em;
   background-color: rgb(223, 223, 223);
+  padding: 40px;
 }
 
-.left-lion {
-  display: inline;
+.lionarticle {
+  position: relative;
+  /*height: 300px;
+  width: 300px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-lion, .right-lion {
+  display: block;
   float: left;
   position: relative;
-  background-color: red;
   width: 180px;
   height: 550px;
+  overflow-x: hidden;
 }
 
 .right-lion {
- display: inline;
- float: left;
- position: relative;
- background-color: red;
- width: 180px;
- height: 550px;
+  float: right;
+  right: 0;
 }
-
 .lion-header {
-  float: left;
-  width: 100%;
-  height: auto;
+  height: 60px;
   text-align: center;
   font-size: 28px;
   font-family: 'Martel Sans';
   color: #fff;
-  font-weight: 100;
-  padding-top: 8px;
-  background-color: #848290;
+  font-kerning: ;
+  font-weight: 300;
+  line-height: 65px;
+  /*padding-top: 8px;*/
+  background-color: #DDE030;
   opacity: 1;
+  color: black;
 }
 
 
@@ -73,7 +97,7 @@
   height: auto;
   text-align: center;
   margin-left: auto;
-
+  font-size: 1em;
   margin-right: auto;
 }
 
@@ -87,11 +111,13 @@
 .lion-buttons li {
   display: inline;
   width: 120px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .get-new {
   float: left;
-  padding: 5px;
+  /*padding: 5px;*/
   background-color: #474550;
 }
 
@@ -108,24 +134,21 @@
 
 .about-lf {
   float: right;
-  padding: 5px;
+  /*padding: 5px;*/
 
   background-color: #474550;
 }
 
 .fact-order {
-  clear: both;
-  font-size: 10px;
-  color: whitesmoke;
-  line-height: 39px;
+  text-align: center;
+  height: 25px;
+  font-size: 12px;
+  line-height: 25px;
+  background-color: rgb(223, 223, 223);
 }
 
 .lionarticle {
-  display: table-cell;
-  table-layout:fixed;
-  vertical-align: middle;
   line-height: normal;
-  padding: 45px;
   text-align: inherit;
 }
 
@@ -136,54 +159,38 @@ i {
 }
 
 @media (min-width: 1132px) {
-  .top-lion, .bottom-lion {
-    display: none;
-  }
 }
 
 @media (max-width: 1132px) {
- .left-lion, .right-lion {
-    display: none;
-  }
-  .top-lion, .bottom-lion {
-    display: block;
-  }
+
   .lion-main {
-    float: none;
-    width: 80%;
-    height: auto;
+    /*width: 330px;*/
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .liontext {
-    width: auto;
-    height: auto;
-  }
   .lion-buttons {
     width: auto;
+    font-size: .8em;
   }
+  .lion-header {
+    font-size: 24px;
+  }
+
 
 }
 
-@media (max-width: 568px) {
-  /*.top-lion {
-    display: block;
+@media (max-width: 600px) {
+
+
+  .liontext, .lion-header, .lion-console, .fact-order {
+    width: 260px;
   }
-  .bottom-lion {
-    display: block;
-  }*/
-  .lion-main {
-    width: 100%;
-  }
-  .liontext {
-    width: 100%;
-  }
+
   .lion-buttons {
     width: 100%;
+    display: block;
   }
-  .lion-main img {
-    float: left;
-    /*display: block;*/
-    width: 100%;
-  }
+
 
 }
