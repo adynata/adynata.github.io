@@ -98,9 +98,9 @@
 .secret-moon {
   position: relative;
   height: 160px;
-  width: 160px;
+  width: 50%;
   display: block;
-  padding-right: 125px;
+  /*padding-right: 125px;*/
   padding-top: 55px;
   float: right;
   background-color: none;
@@ -109,6 +109,8 @@
 .secret-moon-png {
   height: 150px;
   width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
