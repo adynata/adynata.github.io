@@ -71,9 +71,6 @@ html, body {
   float: right;
   overflow: auto;
   overflow-x: hidden;
-
-  /*display: none;*/
-  /*transform:translate(95%, 0px);*/
 }
 
 .hot-spot {

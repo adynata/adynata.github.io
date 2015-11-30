@@ -24,11 +24,11 @@ $(function() {
   $('.moon-p-f > img').on("click", function(){
     removeContentClass();
     $('.moon-content').css("display", "block");
-    setTimeout(function() {
-      var viewportSize = ($('.moon-content').width() ) + 15;
-      $("li.slide.item").width(viewportSize);
-      $(".bx-viewport").height(viewportSize);
-    }, 1000);
+    // setTimeout(function() {
+    //   var viewportSize = ($('.moon-content').width() ) + 15;
+    //   $("li.slide.item").width(viewportSize);
+    //   $(".bx-viewport").height(viewportSize);
+    // }, 1000);
     $('#about').click();
   });
 

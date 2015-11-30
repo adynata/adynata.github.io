@@ -13,6 +13,7 @@ $(function() {
     toggleHidden();
   });
 
+
   $('.hot-spot').click( function() {
     console.log("hideable clicked");
     if ($('.hot-spot').hasClass('hideable')) {
@@ -24,15 +25,17 @@ $(function() {
     $('.bxslider').bxSlider({
       pagerCustom: '#bx-pager'
     });
-    resizeView();
+    // $("li.slide.item").width(300);
+    // $(".bx-viewport").height(800);
+    // $('body').css('zoom', '1');
   });
 
   function resizeView() {
-    setTimeout(function() {
-      var viewportSize = ($('.moon-content').width() / 2) + 5;
-      $("li.slide.item").width(viewportSize);
-      $(".bx-viewport").height(viewportSize);
-    }, 1000);
+    // setTimeout(function() {
+    //   var viewportSize = ($('.moon-content').width() / 2) + 5;
+    //   $("li.slide.item").width(viewportSize);
+    //   $(".bx-viewport").height(viewportSize);
+    // }, 1000);
   }
 
 
@@ -100,7 +103,6 @@ $(function() {
     $('.bionn-content').css("display", "none");
     $('.menu-content').css("display", "none");
     $('.about-content').css("display", "none");
-
   }
 
 

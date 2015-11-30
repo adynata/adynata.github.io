@@ -24,9 +24,9 @@ $(function() {
     });
   }
 
-
-  // setTimeout(function() {
-  //   $('#about').click();
-  // }, 1000);
+  // This is just here because the bx-slider needs to load before it's hidden or it won't function properly. If there's a better way to do this I'd sure like to know.
+  setTimeout(function() {
+    $('.moon-content').css("display", "none");
+  }, 200);
 
 });
