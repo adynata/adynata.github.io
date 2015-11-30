@@ -12,6 +12,7 @@ $(function() {
 
   $(window).on('resize',function() {
     moonTextFit();
+    $('.moon-display').css('height', $('.moon-slide').css('width'));
   });
 
   function moonTextFit() {
@@ -20,13 +21,21 @@ $(function() {
       maxFontPixels: 24,
       minFontPixels: 11,
       explicitHeight: height,
-      debug: true
+      debug: false
     });
   }
 
   // This is just here because the bx-slider needs to load before it's hidden or it won't function properly. If there's a better way to do this I'd sure like to know.
-  setTimeout(function() {
-    $('.moon-content').css("display", "none");
-  }, 200);
+  $('.moon-display').css('height', $('.moon-slide').css('width'));
+  moonTextFit();
+
+  $('.moon-content').css("display", "none");
+
+  $('moon-slide').on("click", function(e) {
+    console.log(e.target);
+  });
+
+
+
 
 });
