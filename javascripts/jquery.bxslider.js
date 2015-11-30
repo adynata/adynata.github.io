@@ -85,11 +85,11 @@
 		onSlideNext: function() {},
 		onSlidePrev: function() {},
 		onSliderResize: function() {}
-	}
+	};
 
 	$.fn.bxSlider = function(options){
 
-		if(this.length == 0) return this;
+		if(this.length === 0) return this;
 
 		// support mutltiple elements
 		if(this.length > 1){
@@ -266,11 +266,11 @@
 			}
 			// preload all images, then perform final DOM / CSS modifications that depend on images being loaded
 			loadElements(preloadSelector, start);
-		}
+		};
 
 		var loadElements = function(selector, callback){
 			var total = selector.find('img, iframe').length;
-			if (total == 0){
+			if (total === 0){
 				callback();
 				return;
 			}
@@ -282,7 +282,7 @@
 				  if(this.complete) $(this).load();
 				});
 			});
-		}
+		};
 
 		/**
 		 * Start the slider
@@ -321,7 +321,7 @@
 			if (slider.settings.controls) updateDirectionControls();
 			// if touchEnabled is true, setup the touch events
 			if (slider.settings.touchEnabled && !slider.settings.ticker) initTouch();
-		}
+		};
 
 		/**
 		 * Returns the calculated height of the viewport, used to determine either adaptiveHeight or the maxHeight value
@@ -393,7 +393,7 @@
 				}
 			}
 			return width;
-		}
+		};
 
 		/**
 		 * Returns the calculated width to be applied to each slide

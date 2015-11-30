@@ -64,7 +64,7 @@
 }
 
 .contact-modal form {
-  height: 80%;
+  height: 75%;
 }
 
 .contact-modal input, .contact-modal textarea {
@@ -76,15 +76,18 @@
   background-color: white;
   vertical-align: middle;
   line-height: normal;
-  margin-left: 12px
+  margin-left: 12px;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .contact-modal textarea {
-  height: 60%;
-  font-size: 13px;
+  height: 55%;
+  font-size: .9em;
   outline: none;
   resize: none;
-
 }
 
 .contact-modal textarea::-webkit-input-placeholder {
