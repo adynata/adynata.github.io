@@ -23,7 +23,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
-  height: 200px;
+  height: auto;
   color: #27334a;
   /*background-color:  #464749;*/
   float: left;
@@ -56,7 +56,6 @@
   width: 200px;
   border-radius: 120px;
   border: 5px solid #464749;
-
 }
 
 .portrait-circle {
@@ -70,13 +69,11 @@
 .about-skillz {
   float: right;
   display: block;
-  /*background-color:  #464749;*/
   width: calc(100% - 250px);
   height: 80px;
   margin-left: 15px;
   font-size: .9em;
   color: #27334a;
-
 }
 
 .about-looking {
@@ -84,11 +81,13 @@
   display: inline-block;
   width: calc(75% - 200px);
   padding: 5%;
+  height: 200px;
 }
 
 .looking {
   font-size: .8em;
 }
+
 .about-resume {
   display: block;
   position: relative;
@@ -145,10 +144,9 @@
 }
 
 .reservoir-about-picture {
-  height: 180px;
-  width: 180px;
+  height: auto;
+  width: auto;
   margin: 10px;
-  border: 3px solid grey;
   float: left;
   display: inline-block;
 }
@@ -172,18 +170,20 @@
 }
 
 .reservoir-about-picture img {
-  height: 100%;
-  width: 100%;
+  height: 180px;
+  width: 180px;
+  border: 3px solid grey;
 
 }
 
 .github-widget {
   margin-left: 80px;
   margin-right: 80px;
+  margin-top: 60px;
   float: left;
   background-color: none;
   color: #27334a;
-  font-size: .7em;
+  font-size: .5em;
   text-align: center;
 }
 
@@ -203,6 +203,7 @@
     margin-right: auto;
     display: block;
   }
+
   .about-resume {
     display: block;
     width: 100%;
@@ -218,6 +219,34 @@
 
 }
 
+@media (max-width: 800px){
+  .about-skillz {
+    font-size: .7em;
+  }
+
+  .reservoir-about {
+    width: 80%;
+    margin-left: 9%;
+    margin-right: auto;
+  }
+
+  .reservoir-about-picture {
+    width: 100%;
+    margin: 0px;
+    margin-top: 35px;
+  }
+  .reservoir-about-picture img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reservoir-about-desc {
+    width: 90%;
+    padding: 5%;
+    font-size: .6em;
+  }
+}
+
 @media (max-width: 700px){
   .about-hello, .about-skillz {
     float: left;
@@ -228,14 +257,32 @@
   }
 
   .about-portrait {
-    width: 100%;
+    width: calc(100% - 10px);
+    margin-right: 0;
   }
 
   .about-skillz {
     margin-top: 25px;
-    /*margin-left: 0px;*/
+    margin-left: 0px;
     width: 100%;
+    font-size: .6em;
   }
+
+  .about-looking {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .looking {
+    font-size: .7em;
+  }
+
+  .resume-circle-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
   .portrait-circle {
     float: none;
     margin-left: auto;
@@ -248,11 +295,10 @@
     margin: 0px;
     padding: 0px;
     display: block;
-
   }
 
   .about-resume {
-    margin-top: 250px;
+    margin-top: 25px;
   }
 
   .looking {
@@ -262,7 +308,10 @@
   }
   .about-hello {
     margin-top: 15px;
+  }
 
+  .reservoir-title {
+    font-size: .6em;
   }
 
 }

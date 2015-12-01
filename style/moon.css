@@ -10,20 +10,81 @@
   /*display: none;*/
 }
 
-.carousel-view {
+.moon-carousel {
 	position: relative;
   float: right;
 	height: auto;
 	width: 52%;
+  margin-bottom: 35px;
 }
+
+.moon-carousel-items {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.moon-display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.moon-slide img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+#chevron-right, #chevron-left {
+  position: absolute;
+  display: block;
+  margin-top: 50%;
+  margin-left: 90%;
+  width: 10%;
+  height: 10%;
+  z-index: 33;
+  fill: white;
+  opacity: .5;
+}
+
+#chevron-left {
+  margin-left: 0;
+}
+
+#chevron-right:hover, #chevron-left:hover {
+  opacity: .8;
+}
+
+#moon-1 {
+  /*z-index: 10;*/
+}
+
+.moon-slide {
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+/*#moon-curtain {
+  z-index: 32;
+  background-color: black;
+  width: 100%;
+  opacity: 1;
+  display: inline-block;
+  position: absolute;
+}*/
 
 .moon-about {
   position: relative;
   float: left;
   width: 45%;
-  max-height: 750px;
-  height: 760px;
-  margin: 10px;
+  /*max-height: 750px;*/
+  height: 100%;
   margin-right: 0px;
   margin-bottom: 35px;
   background-color: grey;
@@ -114,9 +175,61 @@
 }
 
 
+
+.moon-carousel img {
+	max-width: 100%;
+	/*display: block;*/
+}
+
+#moon-pager {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 20px 0;
+	z-index: 10;
+	width: 100%;
+}
+
+
+#moon-pager a:hover,
+{
+	background: #000;
+}
+
+#moon-pager a {
+	display: inline;
+	height: auto;
+	width: auto;
+}
+
+.thumbs {
+	display: inline;
+	height: auto;
+	width: auto;
+}
+
+.thumbs img {
+	display: inline;
+	height: 10%;
+	width: 10%;
+	border: 2px black solid;
+}
+
+.thumbs img:hover {
+	border: 2px white solid;
+}
+
+
+#moon-pager {
+	text-align:center;
+}
+
+
+
 @media(max-width: 1300px){
   .moon-about article {
-    line-height: 28px;
+    line-height: 22px;
   }
 }
 
@@ -140,7 +253,7 @@
   .secret-moon {
     display: none;
   }
-  .carousel-view {
+  .moon-carousel {
     width: 100%;
     float: left;
   }
@@ -161,5 +274,17 @@
 @media(max-width: 718px){
   .moon-about article {
     line-height: 32px;
+  }
+}
+
+@media(max-width: 320px){
+  .thumbs img {
+  	height: 8%;
+  	width: 8%;
+  }
+
+  .moon-about {
+    height: auto;
+    font-size: .7em;
   }
 }

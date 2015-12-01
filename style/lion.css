@@ -158,9 +158,6 @@ i {
   font-style: italic;
 }
 
-@media (min-width: 1132px) {
-}
-
 @media (max-width: 1132px) {
 
   .lion-main {
@@ -181,8 +178,6 @@ i {
 }
 
 @media (max-width: 600px) {
-
-
   .liontext, .lion-header, .lion-console, .fact-order {
     width: 260px;
   }
@@ -191,6 +186,28 @@ i {
     width: 100%;
     display: block;
   }
+}
 
+@media (max-width: 400px) {
+  .liontext, .lion-header, .lion-console, .fact-order {
+    width: 100%;
+    float: left;
+  }
+
+  .left-lion, .right-lion {
+    width: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .liontext, .lion-header, .lion-console, .fact-order {
+    width: 320px;
+    padding: 0;
+
+  }
+  .liontext {
+    width: 290px;
+    padding: 15px;
+  }
 
 }

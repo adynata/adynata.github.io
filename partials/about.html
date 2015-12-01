@@ -52,7 +52,6 @@
     <div class="about-hello">
       Hello, I'm Claire.
       <br>
-      <br>
     </div>
     <div class="about-portrait">
       <div class="portrait-circle">
@@ -112,13 +111,14 @@
         <g>
         </g>
         </svg>
+    </div>
+    <p>
+      RESUME
+    </p>
   </div>
-  <p>
-    RESUME
-  </p>
+
   </div>
   <div class="about-info">
-
     <div class="reservoir-about">
       <div class="reservoir-title">
         <h2>HIGHLIGHTED PROJECT</h2>
@@ -137,7 +137,6 @@
         and <span class="git-html"></span>% HTML.
       </p>
     </div>
-  </div>
   </div>
 </div>
 
@@ -245,11 +244,26 @@
       });
     }
 
+    function lookingTextFit() {
+      $('.about-looking').textfill({
+        widthOnly: false,
+        maxFontPixels: 24,
+        minFontPixels: 10,
+        changeLineHeight: false,
+        explicitHeight: 200,
+        innerTag: 'p'
+      });
+    }
+
     $(window).on('resize',function() {
       resTextFit();
+      lookingTextFit();
     });
 
-    resTextFit();
+    setTimeout(function() {
+      resTextFit();
+      lookingTextFit();
+    }, 1000);
 
 
   </script>
