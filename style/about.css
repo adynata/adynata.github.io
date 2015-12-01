@@ -159,7 +159,7 @@
 }
 
 .reservoir-about-desc {
-  /*font-size: .5em;*/
+  font-weight: 100;
   float: right;
   text-align: left;
   display: inline-block;

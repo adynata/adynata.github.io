@@ -192,6 +192,17 @@ i {
   .liontext, .lion-header, .lion-console, .fact-order {
     width: 100%;
     float: left;
+    padding: 0;
+  }
+
+  .lionarticle {
+    width: 90%;
+    margin: 5%;
+    height: auto;
+  }
+
+  .liontext {
+    height: 425px;
   }
 
   .left-lion, .right-lion {

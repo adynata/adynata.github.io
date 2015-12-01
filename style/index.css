@@ -10,6 +10,10 @@ html, body {
   height: auto;
 }
 
+.logo h1, .nav-buttons, .resume-circle, .resume-circle-container p, .reservoir-about-picture {
+  cursor: pointer;
+
+}
 
 .menu-components-wrapper {
   position: fixed;

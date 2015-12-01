@@ -1,18 +1,12 @@
 $(function() {
 
-  // $( ".logo" ).load( "partials/logo.svg");
-  $( ".social-links" ).load( "partials/social_links.html");
-  // $( ".moon-content").load( "partials/moon.html")
-
   $( ".about-content" ).load( "partials/about.html");
 
-  // $( ".project-elements" ).load( "partials/project_menu.html" )
-
+  $( ".social-links" ).load( "partials/social_links.html");
 
   $('.menu-text').click( function() {
     toggleHidden();
   });
-
 
   $('.hot-spot').click( function() {
     console.log("hideable clicked");
@@ -67,7 +61,6 @@ $(function() {
     removeContentClass();
     $('.menu-content').css("display", "block");
   });
-
 
   function removeContentClass() {
     // set all other features to display: none
