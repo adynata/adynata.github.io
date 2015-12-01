@@ -256,6 +256,10 @@
     text-align: center;
   }
 
+  .subjectz {
+    color: white;
+  }
+
   .about-portrait {
     width: calc(100% - 10px);
     margin-right: 0;
