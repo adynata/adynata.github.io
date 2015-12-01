@@ -292,6 +292,10 @@ li.projects {
   .subtitle {
     display: none;
   }
+  .about-skillz {
+    width: 90%;
+    font-size: .7em;
+  }
 }
 
 @media (max-width: 568px) {
@@ -353,6 +357,10 @@ li.projects {
 }
 
 @media (max-width: 400px){
+
+  .about-portrait {
+    margin: 0;
+  }
 
 
   .header-nav-links ul .contact {

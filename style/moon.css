@@ -83,8 +83,8 @@
   position: relative;
   float: left;
   width: 45%;
-  max-height: 750px;
-  height: 790px;
+  /*max-height: 750px;*/
+  height: 100%;
   margin-right: 0px;
   margin-bottom: 35px;
   background-color: grey;
@@ -229,7 +229,7 @@
 
 @media(max-width: 1300px){
   .moon-about article {
-    line-height: 28px;
+    line-height: 22px;
   }
 }
 
@@ -274,5 +274,17 @@
 @media(max-width: 718px){
   .moon-about article {
     line-height: 32px;
+  }
+}
+
+@media(max-width: 320px){
+  .thumbs img {
+  	height: 8%;
+  	width: 8%;
+  }
+
+  .moon-about {
+    height: auto;
+    font-size: .7em;
   }
 }
