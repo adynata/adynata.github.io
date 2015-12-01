@@ -78,7 +78,7 @@ html, body {
 }
 
 .hot-spot {
-  position: absolute;
+  position: fixed;
   /*background-color: black;*/
   width: 55px;
   height: 100%;

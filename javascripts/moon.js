@@ -66,15 +66,12 @@ $(function() {
 
 
   function setNewMoon(num) {
-
-    console.log($('#moon-' + num));
     $('.moon-slide').removeClass('active-moon');
     $('.moon-slide').css('z-index', '0');
     $('.thumbs img').css('border', '2px black solid');
     $('#moon-' + num ).css('z-index', '31');
     $('#moon-' + num ).addClass('active-moon');
     $('#moon-' + num + "-t img").css('border', '2px white solid');
-
   }
 
   setTimeout(function() {

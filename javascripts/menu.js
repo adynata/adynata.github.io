@@ -4,6 +4,7 @@ $(function() {
     removeContentClass();
     $('.lion-content').css("display", "block");
     toggleHidden();
+    document.getElementById('top').scrollIntoView();
     $('.about-lf').click();
   });
 
@@ -12,24 +13,21 @@ $(function() {
     $('.moon-content').css("display", "block");
     $('#about').click();
     toggleHidden();
+    document.getElementById('top').scrollIntoView();
   });
 
   $('.lion-p-f > img').click( function(){
     removeContentClass();
     $('.lion-content').css("display", "block");
     $('.about-lf').click();
-
+    document.getElementById('top').scrollIntoView();
   });
 
   $('.moon-p-f > img').on("click", function(){
     removeContentClass();
     $('.moon-content').css("display", "block");
-    // setTimeout(function() {
-    //   var viewportSize = ($('.moon-content').width() ) + 15;
-    //   $("li.slide.item").width(viewportSize);
-    //   $(".bx-viewport").height(viewportSize);
-    // }, 1000);
     $('#about').click();
+    document.getElementById('top').scrollIntoView();
   });
 
   function removeContentClass() {
@@ -48,6 +46,5 @@ $(function() {
     $('.hot-spot').toggleClass('hideable');
     $('.menu-text').text(menuText);
   }
-
 
 });

@@ -55,6 +55,7 @@ $(function() {
   $('.about').on('click', function() {
     removeContentClass();
     $('.about-content').css("display", "block");
+    document.getElementById('top').scrollIntoView();
   });
 
   $('.projects').on('click', function() {
