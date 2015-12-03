@@ -35,7 +35,7 @@
 
 .bionn-head-title h1 {
   color: white;
-  font-size: 2em;
+  font-size: 3.3em;
   font-variant: small-caps;
   font-weight: 500;
   margin-top: 35px;
@@ -61,7 +61,7 @@
 
 @media (max-width: 762px) {
   .bionn-head-title h1 {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
   .bionn-copy {
     width: 85%;
@@ -75,6 +75,6 @@
 
 @media (max-width: 500px) {
   .bionn-head-title h1 {
-    font-size: 1.3em;
+    font-size: 1.8em;
   }
 }
