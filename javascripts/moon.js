@@ -23,9 +23,9 @@ $(function() {
   function moonTextFit() {
     var height = $('.moon-article').css('height').slice(0,-2);
     $('.moon-article').textfill({
-      maxFontPixels: 24,
-      minFontPixels: 12,
-      explicitHeight: height,
+      maxFontPixels: 16,
+      minFontPixels: 11,
+      explicitHeight: 680,
       debug: false
     });
   }
@@ -73,12 +73,6 @@ $(function() {
     $('#moon-' + num ).addClass('active-moon');
     $('#moon-' + num + "-t img").css('border', '2px white solid');
   }
-
-  setTimeout(function() {
-    $('.moon-display').css('height', $('.moon-slide').css('width'));
-    moonTextFit();
-    $('.moon-content').css("display", "none");
-  }, 600);
 
   $("#chevron-right").on("click", function() {
     clickRight();

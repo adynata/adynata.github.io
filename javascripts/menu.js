@@ -13,6 +13,7 @@ $(function() {
     $('.moon-content').css("display", "block");
     $('.moon-display').css('height', $('.moon-slide').css('width'));
     $('#about').click();
+    moonTextFit();
     toggleHidden();
     document.getElementById('top').scrollIntoView();
   });
@@ -38,6 +39,7 @@ $(function() {
     $('.moon-content').css("display", "block");
     $('.moon-display').css('height', $('.moon-slide').css('width'));
     $('#about').click();
+    moonTextFit();
     document.getElementById('top').scrollIntoView();
   });
 
@@ -69,6 +71,16 @@ $(function() {
   function adjustBionnHead() {
     var height = $('.bionn-head-image img').css("height").slice(0,-2);
     $('.bionn-head').css("height", height);
+  }
+  
+  function moonTextFit() {
+    var height = $('.moon-article').css('height').slice(0,-2);
+    $('.moon-article').textfill({
+      maxFontPixels: 16,
+      minFontPixels: 11,
+      explicitHeight: 680,
+      debug: false
+    });
   }
 
 });
