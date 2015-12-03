@@ -11,7 +11,17 @@ $(function() {
   $('.moon-p > img').on("click", function(){
     removeContentClass();
     $('.moon-content').css("display", "block");
+    $('.moon-display').css('height', $('.moon-slide').css('width'));
     $('#about').click();
+    toggleHidden();
+    document.getElementById('top').scrollIntoView();
+  });
+
+  $('.bionn-p > img').on("click", function(){
+    removeContentClass();
+    $('.bionn-content').css("display", "block");
+    $('#about').click();
+    adjustBionnHead();
     toggleHidden();
     document.getElementById('top').scrollIntoView();
   });
@@ -26,6 +36,15 @@ $(function() {
   $('.moon-p-f > img').on("click", function(){
     removeContentClass();
     $('.moon-content').css("display", "block");
+    $('.moon-display').css('height', $('.moon-slide').css('width'));
+    $('#about').click();
+    document.getElementById('top').scrollIntoView();
+  });
+
+  $('.bionn-p-f > img').on("click", function(){
+    removeContentClass();
+    $('.bionn-content').css("display", "block");
+    adjustBionnHead();
     $('#about').click();
     document.getElementById('top').scrollIntoView();
   });
@@ -45,6 +64,11 @@ $(function() {
     $('.wrapper').toggleClass('hide show', 700);
     $('.hot-spot').toggleClass('hideable');
     $('.menu-text').text(menuText);
+  }
+
+  function adjustBionnHead() {
+    var height = $('.bionn-head-image img').css("height").slice(0,-2);
+    $('.bionn-head').css("height", height);
   }
 
 });

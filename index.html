@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="style/about.css">
   <link rel="stylesheet" href="style/projects.css">
   <link rel="stylesheet" href="style/bionn.css">
+  <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -299,9 +301,30 @@
           <div class="secret-moon"><img class="secret-moon-png"src="/images/moon.png"/></div>
         </div>
         <div class="bionn-content">
-          <div class="bionn-map">
-            <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/adynata.ciez978js12u2srm0p6xdr78o/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYWR5bmF0YSIsImEiOiJjaWV6OTc5cTcxMmxucnptM2liNmxzMXphIn0.BdFZvNJlxMjOKhgK4mWUJA'></iframe>
+          <div class="bionn-head">
+            <div class="bionn-head-image">
+              <img src="images/hammocks/group-1.jpg"/>
+            </div>
+            <div class="bionn-head-title">
+              <h1> The Benevolent International Order <br> of Nomadic Nappers </h1>
+            </div>
           </div>
+          <div class="bionn-body">
+            <div class="bionn-copy">
+              <span>
+                BIONN is an ongoing exploration of the potential within the commons for enhanced lounging co-created by Claire Woods and Sarah Tappon. Events are typically a mix of assessing the structural integrity of public spaces, climbing, improvisational rigging exercises, conspicuous napping, and extra-low-key socializing. To date, the Order has hosted ten (official) gatherings that have raised nearly 200 hammocks in vaguely inappropriate places.
+              </span>
+            </div>
+            <div id='bionn-map'>
+              <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/adynata.ciez978js12u2srm0p6xdr78o/attribution,zoompan.html?access_token=pk.eyJ1IjoiYWR5bmF0YSIsImEiOiJjaWV6OTc5cTcxMmxucnptM2liNmxzMXphIn0.BdFZvNJlxMjOKhgK4mWUJA'></iframe>
+            </div>
+              <!-- <script>
+              L.mapbox.accessToken = 'pk.eyJ1IjoiYWR5bmF0YSIsImEiOiJjaWV6OTc5cTcxMmxucnptM2liNmxzMXphIn0.BdFZvNJlxMjOKhgK4mWUJA';
+              var map = L.mapbox.map('bionn-map', 'adynata.ciez978js12u2srm0p6xdr78o')
+                  // .setView([37.828, -122.399], 12);
+                  .setView([40, -74.50], 9)
+                  maxzoom(.9);
+              </script> -->
         </div>
       </div>
       <footer>
@@ -317,6 +340,7 @@
   <script src="javascripts/lion.js"></script>
   <script src="javascripts/moon.js"></script>
   <script src="javascripts/menu.js"></script>
+  <script src="javascripts/bionn.js"></script>
   <script src="javascripts/jquery.textfill.min.js"></script>
 
 
