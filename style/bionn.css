@@ -60,7 +60,7 @@
 
 
 @media (max-width: 762px) {
-  .bionn-head-title h1 {
+  /*.bionn-head-title h1 {
     font-size: 1.9em;
   }
   .bionn-copy {
@@ -70,11 +70,11 @@
   }
   #bionn-map {
     width: 100%;
-  }
+  }*/
 }
 
 @media (max-width: 500px) {
-  .bionn-head-title h1 {
+  /*.bionn-head-title h1 {
     font-size: 1.8em;
-  }
+  }*/
 }
