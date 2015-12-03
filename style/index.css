@@ -150,6 +150,7 @@ header {
   position: relative;
   height: auto;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 footer {
