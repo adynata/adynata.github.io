@@ -326,6 +326,10 @@ li.projects {
       position: absolute;
     }
 
+    footer {
+      width: auto;
+    }
+
     li.projects {
       display: inline;
     }
@@ -371,6 +375,10 @@ li.projects {
   }
   .header-nav-links {
     /*height: 220px;*/
+  }
+
+  .social-links ul {
+    width: 100%;
   }
 
 
