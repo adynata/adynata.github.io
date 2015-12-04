@@ -35,12 +35,12 @@
 }
 
 .bionn-head-title h1 {
-  color: white;
+  color: #1a2b59;
   font-size: 3.3em;
   font-variant: small-caps;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 35px;
-  text-shadow: 0px 0px 5px #222e4d, 0 0 25px #222e4d, 0 0 6px #222e4d;
+  text-shadow: 0px 0px 15px white, 0 0 25px white, 0 0 6px white;
 }
 
 .bionn-body {
