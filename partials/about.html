@@ -134,7 +134,7 @@
       <p> My GitHub account is at present time <span class="git-ruby"></span>% Ruby,
         <span class="git-javascript"></span>% JavaScript,
         <span class="git-css"></span>% CSS,
-        and <span class="git-html"></span>% HTML.
+        and <span class="git-html"></span>% HTML. The other <span class="git-other"></span>% is miscellany.
       </p>
     </div>
   </div>
@@ -186,7 +186,8 @@
           "HTML":0,
           "CSS":0,
           "JavaScript":0,
-          "Ruby":0
+          "Ruby":0,
+          "Other":0
         }
         function gitStats() {
           $.get('https://api.github.com/users/adynata/repos', function(data){
@@ -205,12 +206,14 @@
                       hashed[keys[j]] += data[keys[j]];
                       totalCode += data[keys[j]];
                     }
-                    })(j);
 
-                  }
-                  setTimeout(function() {
+                    })(j);
+                    // console.log('lookit ' + hashed);
                     setStats(hashed);
-                  }, 2000);
+                  }
+                  // setTimeout(function() {
+                  //   setStats(hashed);
+                  // }, 2000);
 
               });
             })(i);
@@ -219,11 +222,13 @@
               var jScr = (Math.floor(hashed["JavaScript"]/totalCode*100));
               var css = (Math.floor(hashed["CSS"]/totalCode*100));
               var htMl = (Math.floor(hashed["HTML"]/totalCode*100));
+              var other = (100 - (ruby + jScr + css + htMl));
 
               $('.git-ruby').text(ruby);
               $('.git-javascript').text(jScr);
               $('.git-css').text(css);
               $('.git-html').text(htMl);
+              $('.git-other').text(other);
             }
 
         }
